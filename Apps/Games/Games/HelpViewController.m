@@ -1,0 +1,45 @@
+#import "HelpViewController.h"
+
+@implementation HelpViewController
+@synthesize webView;
+
+- (void)dealloc {
+    self.webView = nil;
+    [super dealloc];
+}
+
+- (void)viewDidLoad {
+    [super viewDidLoad];
+    NSBundle *theBundle = [NSBundle mainBundle];
+    NSData *theData = [NSData dataWithContentsOfFile:[theBundle pathForResource:@"index" ofType:@"html"]];
+    NSURL *theBaseURL = [theBundle resourceURL];
+    
+    [self.webView loadData:theData MIMEType:@"text/html" textEncodingName:@"UTF-8" baseURL:theBaseURL];
+}
+
+- (void)viewDidUnload {
+    self.webView = nil;
+    [super viewDidUnload];
+}
+
+- (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)inOrientation {
+    return YES;
+}
+
+#pragma mark UIWebViewDelegate
+
+- (BOOL)webView:(UIWebView *)inWebView shouldStartLoadWithRequest:(NSURLRequest *)inRequest navigationType:(UIWebViewNavigationType)inNavigationType {
+    NSURL *theURL = inRequest.URL;
+    
+    if([theURL.scheme isEqualToString:@"games"]) {
+        NSInteger theIndex = [theURL.host intValue];
+        
+        self.tabBarController.selectedIndex = theIndex;
+        return NO;
+    }
+    else {
+        return YES;
+    }
+}
+
+@end

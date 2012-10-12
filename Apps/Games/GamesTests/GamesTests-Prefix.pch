@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'GamesTests' target in the 'GamesTests' project
+//
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+#endif

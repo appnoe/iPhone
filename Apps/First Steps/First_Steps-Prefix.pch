@@ -1,0 +1,18 @@
+//
+// Prefix header for all source files of the 'First Steps' target in the 'First Steps' project
+//
+
+#ifdef __OBJC__
+#endif
+
+
+#ifdef DEBUG
+// taken from http://kuoi.com/~kamikaze/read.php?id=158
+// Thanks to Mark Damon Hughes - thanks for saving my time :-)
+// DLOG takes a format argument and 0 or more args:
+// DLOG(@"");
+// DLOG(@"%d", x);
+    #define DLOG(fmt, ...) NSLog(@"%s: " fmt, __PRETTY_FUNCTION__, ##__VA_ARGS__)
+    #else
+    #define DLOG(...)
+#endif
