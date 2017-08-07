@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <script type="text/javascript" src="jquery-2.0.0.js"></script>
+        <meta name = "viewport" content = "width = device-width" />
+        <script type="text/javascript">
+            function callMethod(inName, inParameter) {
+                var theURL = "callback://" + inName + "/" + inParameter;
+                var theFrame = document.createElement("IFRAME");
+                
+                theFrame.setAttribute("src", theURL);
+                document.body.appendChild(theFrame);
+                document.body.removeChild(theFrame);
+            }
+            function setBarTitle(inTitle) {
+                callMethod("setBarTitle", inTitle);
+            }
+            function playSound(inName) {
+                callMethod("playSound", inName);
+            }
+            function setBarTitleWithSound(inTitle, inSoundName) {
+                setBarTitle(inTitle);
+                playSound(inSoundName);
+            }
+
+        </script>
+    </head>
+    <body>
+        <h1>Titel ändern</h1>
+        <ul>
+            <li><a href="callback://setBarTitle/Montag">Montag</a></li>
+            <li><a href="callback://setBarTitle/Dienstag">Dienstag</a></li>
+            <li><a href="callback://setBarTitle/Mittwoch">Mittwoch</a></li>
+            <li><a href="callback://setBarTitle/Donnerstag">Donnerstag</a></li>
+            <li><a href="callback://setBarTitle/Freitag">Freitag</a></li>
+            <li><a href="callback://setBarTitle/Samstag">Samstag</a></li>
+            <li><a href="callback://setBarTitle/Sonntag">Sonntag</a></li>
+        </ul>
+        <h1>Aktivitätsanzeige</h1>
+        <p><a href="callback://animateActivityIndicator/yes">an</a>
+        <a href="callback://animateActivityIndicator/no">aus</a></p>
+        <h1>Lärm</h1>
+        <p><a href="callback://playSound/ringtone">Wecker</a></p>
+        <h1>Javascript</h1>
+        <ul>
+            <li><a href="javascript:void(0)" onclick="setBarTitle('Montag')">Montag</a></li>
+            <li><a href="javascript:void(0)" onclick="playSound('ringtone')">Wecker</a></li>
+            <li><a href="javascript:void(0)" onclick="setBarTitleWithSound('Dienstag', 'ringtone')">Wecker am Dienstag</a></li>
+        </uL>
+    </body>
+</html>

@@ -1,0 +1,33 @@
+
+/* Class = "IBUINavigationItem"; title = "Alarm Clock"; ObjectID = "9sC-b1-spD"; */
+"9sC-b1-spD.title" = "Wecker";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Appearance"; ObjectID = "G7m-bg-DhX"; */
+"G7m-bg-DhX.headerTitle" = "Darstellung";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Alarm"; ObjectID = "LYy-4H-djP"; */
+"LYy-4H-djP.headerTitle" = "Alarm";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "PfB-yV-ofU"; */
+"PfB-yV-ofU.text" = "Label";
+
+/* Class = "IBUILabel"; text = "Digits"; ObjectID = "X0u-Xp-hWy"; */
+"X0u-Xp-hWy.text" = "Ziffern";
+
+/* Class = "IBUINavigationItem"; title = "Preferences"; ObjectID = "qm7-KV-fyt"; */
+"qm7-KV-fyt.title" = "Einstellungen";
+
+/* Class = "IBUILabel"; text = "Partition of Dial"; ObjectID = "tTG-ax-Mw1"; */
+"tTG-ax-Mw1.text" = "Einteilung";
+
+/* Class = "IBUISegmentedControl"; wka-Ye-CFd.segmentTitles[0] = "None"; ObjectID = "wka-Ye-CFd"; */
+"wka-Ye-CFd.segmentTitles[0]" = "keine";
+
+/* Class = "IBUISegmentedControl"; wka-Ye-CFd.segmentTitles[1] = "Hours"; ObjectID = "wka-Ye-CFd"; */
+"wka-Ye-CFd.segmentTitles[1]" = "Stunden";
+
+/* Class = "IBUISegmentedControl"; wka-Ye-CFd.segmentTitles[2] = "Minutes"; ObjectID = "wka-Ye-CFd"; */
+"wka-Ye-CFd.segmentTitles[2]" = "Minuten";
+
+/* Class = "IBUILabel"; text = "Sound"; ObjectID = "zXY-rt-i6N"; */
+"zXY-rt-i6N.text" = "Ton";

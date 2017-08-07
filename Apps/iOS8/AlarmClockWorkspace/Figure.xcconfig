@@ -1,0 +1,10 @@
+//
+//  Figure.xcconfig
+//  
+//
+//  Created by Clemens Wagner on 23.08.14.
+//
+//
+
+OTHER_LDFLAGS = -ObjC
+GCC_TREAT_WARNINGS_AS_ERRORS = YES

@@ -1,0 +1,33 @@
+
+/* Class = "IBUISegmentedControl"; 35l-XO-VxO.segmentTitles[0] = "None"; ObjectID = "35l-XO-VxO"; */
+"35l-XO-VxO.segmentTitles[0]" = "keine";
+
+/* Class = "IBUISegmentedControl"; 35l-XO-VxO.segmentTitles[1] = "Hours"; ObjectID = "35l-XO-VxO"; */
+"35l-XO-VxO.segmentTitles[1]" = "Stunden";
+
+/* Class = "IBUISegmentedControl"; 35l-XO-VxO.segmentTitles[2] = "Minutes"; ObjectID = "35l-XO-VxO"; */
+"35l-XO-VxO.segmentTitles[2]" = "Minuten";
+
+/* Class = "IBUILabel"; text = "Sound"; ObjectID = "59r-IB-SYf"; */
+"59r-IB-SYf.text" = "Ton";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Alarm"; ObjectID = "FGy-l7-inn"; */
+"FGy-l7-inn.headerTitle" = "Alarm";
+
+/* Class = "IBUITableViewSection"; headerTitle = "Appearance"; ObjectID = "Gp2-l3-p0H"; */
+"Gp2-l3-p0H.headerTitle" = "Darstellung";
+
+/* Class = "IBUILabel"; text = "Digits"; ObjectID = "hkK-os-25R"; */
+"hkK-os-25R.text" = "Ziffern";
+
+/* Class = "IBUILabel"; text = "Label"; ObjectID = "in2-Xl-qZ1"; */
+"in2-Xl-qZ1.text" = "Label";
+
+/* Class = "IBUINavigationItem"; title = "Alarm Clock"; ObjectID = "jd0-hB-JVi"; */
+"jd0-hB-JVi.title" = "Wecker";
+
+/* Class = "IBUILabel"; text = "Partition of Dial"; ObjectID = "lUD-Wc-0iR"; */
+"lUD-Wc-0iR.text" = "Einteilung";
+
+/* Class = "IBUINavigationItem"; title = "Preferences"; ObjectID = "xTg-iR-5Xr"; */
+"xTg-iR-5Xr.title" = "Einstellungen";

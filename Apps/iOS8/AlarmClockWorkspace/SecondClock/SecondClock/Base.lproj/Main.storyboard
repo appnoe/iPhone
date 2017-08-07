@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6206.8" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7026.1"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OeJ-Zb-DDN" customClass="ClockView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="OeJ-Zb-DDN" secondAttribute="height" multiplier="1:1" id="QVT-KF-Ans"/>
+                                    <constraint firstAttribute="width" constant="320" id="wCa-ms-STq"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CSX-HF-lHP" customClass="EllipseView">
+                                <rect key="frame" x="0.0" y="320" width="600" height="280"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="tintColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="CSX-HF-lHP" firstAttribute="top" secondItem="OeJ-Zb-DDN" secondAttribute="bottom" id="GWv-g6-x8o"/>
+                            <constraint firstAttribute="trailing" secondItem="CSX-HF-lHP" secondAttribute="trailing" id="OiZ-yp-8g1"/>
+                            <constraint firstItem="OeJ-Zb-DDN" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="PDn-Yw-I8k"/>
+                            <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="CSX-HF-lHP" secondAttribute="bottom" id="R0V-rb-wwM"/>
+                            <constraint firstItem="OeJ-Zb-DDN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="RB1-1Y-Ftr"/>
+                            <constraint firstItem="CSX-HF-lHP" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="wc6-YK-FrL"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>

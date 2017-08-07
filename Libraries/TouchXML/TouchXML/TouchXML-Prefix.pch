@@ -1,0 +1,17 @@
+//
+//  TouchXML-Prefix.pch
+//  TouchXML
+//
+//  Created by Clemens Wagner on 24.06.12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+#import <Foundation/Foundation.h>
+#endif

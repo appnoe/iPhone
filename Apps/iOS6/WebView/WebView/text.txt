@@ -1,0 +1,1 @@
+Dies ist ein Beispieltext mit Umlauten: äöüÄÖÜß.

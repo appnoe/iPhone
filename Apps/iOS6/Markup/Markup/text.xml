@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<text>Dies ist ein Beispieltext mit <u>Attributen</u>. Sie können mit dem Markup-Parser beliebige Tags definieren; z. B. <em>em</em>, <strong>strong</strong> oder <blink>blink</blink>. Außerdem können Sie bei jedem Tag die <em color="red">Text-</em> und die <strong background-color="#20CC33">Hintergrundfarbe</strong> über Attribute setzen. Durchstreichen ist <strike>nicht</strike> möglich, wobei Sie <strike>Strike</strike> aber nicht mit <stroke>Stroke</stroke> verwechseln sollten. Auch <shadow>Textschatten</shadow> lassen sich problemlos darstellen.
+    <p>Eigene Absätze sind über <code>NSParagraphStyle</code> möglich. Das ist eine eigene Klasse, die viele Attribute bereitstellt.</p></text>

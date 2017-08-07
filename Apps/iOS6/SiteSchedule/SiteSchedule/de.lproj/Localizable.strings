@@ -1,0 +1,15 @@
+"Reachability0" = "keine Verbindung";
+"Reachability1" = "Wifi";
+"Reachability2" = "Mobil";
+
+"Details0" = "Aufgabe";
+"Details1" = "Baustelle";
+"Details2" = "Kontakte";
+
+"cell00path" = "activity.details";
+"cell01path" = "startDate";
+"cell02path" = "endDate";
+"cell03path" = "activity.team.name";
+"cell10path" = "activity.site.name";
+"cell11path" = "activity.site.street";
+"cell12path" = "city";

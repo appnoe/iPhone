@@ -1,0 +1,10 @@
+//
+//  TouchXML.xcconfig
+//  XPath
+//
+//  Created by Clemens Wagner on 27.06.12.
+//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
+//
+
+HEADER_SEARCH_PATHS = $(inherited) $(SDKROOT)/usr/include/libxml2
+OTHER_LDFLAGS = $(inherited) -lxml2

@@ -1,0 +1,306 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB6380CA15F3D4E500199119 /* CALayer+AnimationPausing.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6380C915F3D4E500199119 /* CALayer+AnimationPausing.m */; };
+		ABB5B77D15ED499000E9EBE2 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB5B77C15ED499000E9EBE2 /* UIKit.framework */; };
+		ABB5B77F15ED499000E9EBE2 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB5B77E15ED499000E9EBE2 /* Foundation.framework */; };
+		ABB5B78115ED499000E9EBE2 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB5B78015ED499000E9EBE2 /* CoreGraphics.framework */; };
+		ABB5B78715ED499000E9EBE2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABB5B78515ED499000E9EBE2 /* InfoPlist.strings */; };
+		ABB5B78915ED499000E9EBE2 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5B78815ED499000E9EBE2 /* main.m */; };
+		ABB5B78D15ED499000E9EBE2 /* FlipBookAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5B78C15ED499000E9EBE2 /* FlipBookAppDelegate.m */; };
+		ABB5B79015ED499000E9EBE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABB5B78E15ED499000E9EBE2 /* Main.storyboard */; };
+		ABB5B79315ED499000E9EBE2 /* FlipBookViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABB5B79215ED499000E9EBE2 /* FlipBookViewController.m */; };
+		ABB5B79A15ED49CD00E9EBE2 /* animated-image.gif in Resources */ = {isa = PBXBuildFile; fileRef = ABB5B79915ED49CD00E9EBE2 /* animated-image.gif */; };
+		ABB5B79D15ED4AB800E9EBE2 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB5B79B15ED4AB800E9EBE2 /* ImageIO.framework */; };
+		ABB5B79E15ED4AB800E9EBE2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABB5B79C15ED4AB800E9EBE2 /* QuartzCore.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB6380C815F3D4E500199119 /* CALayer+AnimationPausing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+AnimationPausing.h"; sourceTree = "<group>"; };
+		AB6380C915F3D4E500199119 /* CALayer+AnimationPausing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+AnimationPausing.m"; sourceTree = "<group>"; };
+		ABB5B77815ED499000E9EBE2 /* FlipBookAnimation.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FlipBookAnimation.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABB5B77C15ED499000E9EBE2 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ABB5B77E15ED499000E9EBE2 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABB5B78015ED499000E9EBE2 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ABB5B78415ED499000E9EBE2 /* FlipBookAnimation-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FlipBookAnimation-Info.plist"; sourceTree = "<group>"; };
+		ABB5B78615ED499000E9EBE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABB5B78815ED499000E9EBE2 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABB5B78A15ED499000E9EBE2 /* FlipBookAnimation-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "FlipBookAnimation-Prefix.pch"; sourceTree = "<group>"; };
+		ABB5B78B15ED499000E9EBE2 /* FlipBookAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipBookAppDelegate.h; sourceTree = "<group>"; };
+		ABB5B78C15ED499000E9EBE2 /* FlipBookAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipBookAppDelegate.m; sourceTree = "<group>"; };
+		ABB5B78F15ED499000E9EBE2 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABB5B79115ED499000E9EBE2 /* FlipBookViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FlipBookViewController.h; sourceTree = "<group>"; };
+		ABB5B79215ED499000E9EBE2 /* FlipBookViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FlipBookViewController.m; sourceTree = "<group>"; };
+		ABB5B79915ED49CD00E9EBE2 /* animated-image.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = "animated-image.gif"; sourceTree = "<group>"; };
+		ABB5B79B15ED4AB800E9EBE2 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = System/Library/Frameworks/ImageIO.framework; sourceTree = SDKROOT; };
+		ABB5B79C15ED4AB800E9EBE2 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABB5B77515ED499000E9EBE2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB5B79D15ED4AB800E9EBE2 /* ImageIO.framework in Frameworks */,
+				ABB5B79E15ED4AB800E9EBE2 /* QuartzCore.framework in Frameworks */,
+				ABB5B77D15ED499000E9EBE2 /* UIKit.framework in Frameworks */,
+				ABB5B77F15ED499000E9EBE2 /* Foundation.framework in Frameworks */,
+				ABB5B78115ED499000E9EBE2 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABB5B76D15ED499000E9EBE2 = {
+			isa = PBXGroup;
+			children = (
+				ABB5B78215ED499000E9EBE2 /* FlipBookAnimation */,
+				ABB5B77B15ED499000E9EBE2 /* Frameworks */,
+				ABB5B77915ED499000E9EBE2 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABB5B77915ED499000E9EBE2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABB5B77815ED499000E9EBE2 /* FlipBookAnimation.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABB5B77B15ED499000E9EBE2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABB5B79B15ED4AB800E9EBE2 /* ImageIO.framework */,
+				ABB5B79C15ED4AB800E9EBE2 /* QuartzCore.framework */,
+				ABB5B77C15ED499000E9EBE2 /* UIKit.framework */,
+				ABB5B77E15ED499000E9EBE2 /* Foundation.framework */,
+				ABB5B78015ED499000E9EBE2 /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABB5B78215ED499000E9EBE2 /* FlipBookAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				ABB5B78B15ED499000E9EBE2 /* FlipBookAppDelegate.h */,
+				ABB5B78C15ED499000E9EBE2 /* FlipBookAppDelegate.m */,
+				ABB5B78E15ED499000E9EBE2 /* Main.storyboard */,
+				ABB5B79115ED499000E9EBE2 /* FlipBookViewController.h */,
+				ABB5B79215ED499000E9EBE2 /* FlipBookViewController.m */,
+				ABB5B78315ED499000E9EBE2 /* Supporting Files */,
+				AB6380C815F3D4E500199119 /* CALayer+AnimationPausing.h */,
+				AB6380C915F3D4E500199119 /* CALayer+AnimationPausing.m */,
+			);
+			path = FlipBookAnimation;
+			sourceTree = "<group>";
+		};
+		ABB5B78315ED499000E9EBE2 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABB5B79915ED49CD00E9EBE2 /* animated-image.gif */,
+				ABB5B78415ED499000E9EBE2 /* FlipBookAnimation-Info.plist */,
+				ABB5B78515ED499000E9EBE2 /* InfoPlist.strings */,
+				ABB5B78815ED499000E9EBE2 /* main.m */,
+				ABB5B78A15ED499000E9EBE2 /* FlipBookAnimation-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABB5B77715ED499000E9EBE2 /* FlipBookAnimation */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABB5B79615ED499000E9EBE2 /* Build configuration list for PBXNativeTarget "FlipBookAnimation" */;
+			buildPhases = (
+				ABB5B77415ED499000E9EBE2 /* Sources */,
+				ABB5B77515ED499000E9EBE2 /* Frameworks */,
+				ABB5B77615ED499000E9EBE2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FlipBookAnimation;
+			productName = FlipBookAnimation;
+			productReference = ABB5B77815ED499000E9EBE2 /* FlipBookAnimation.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABB5B76F15ED499000E9EBE2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = FlipBook;
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Clemens Wagner";
+			};
+			buildConfigurationList = ABB5B77215ED499000E9EBE2 /* Build configuration list for PBXProject "FlipBookAnimation" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABB5B76D15ED499000E9EBE2;
+			productRefGroup = ABB5B77915ED499000E9EBE2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABB5B77715ED499000E9EBE2 /* FlipBookAnimation */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABB5B77615ED499000E9EBE2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB5B78715ED499000E9EBE2 /* InfoPlist.strings in Resources */,
+				ABB5B79015ED499000E9EBE2 /* Main.storyboard in Resources */,
+				ABB5B79A15ED49CD00E9EBE2 /* animated-image.gif in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABB5B77415ED499000E9EBE2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABB5B78915ED499000E9EBE2 /* main.m in Sources */,
+				ABB5B78D15ED499000E9EBE2 /* FlipBookAppDelegate.m in Sources */,
+				ABB5B79315ED499000E9EBE2 /* FlipBookViewController.m in Sources */,
+				AB6380CA15F3D4E500199119 /* CALayer+AnimationPausing.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		ABB5B78515ED499000E9EBE2 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABB5B78615ED499000E9EBE2 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABB5B78E15ED499000E9EBE2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABB5B78F15ED499000E9EBE2 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABB5B79415ED499000E9EBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABB5B79515ED499000E9EBE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABB5B79715ED499000E9EBE2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipBookAnimation/FlipBookAnimation-Prefix.pch";
+				INFOPLIST_FILE = "FlipBookAnimation/FlipBookAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ABB5B79815ED499000E9EBE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "FlipBookAnimation/FlipBookAnimation-Prefix.pch";
+				INFOPLIST_FILE = "FlipBookAnimation/FlipBookAnimation-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABB5B77215ED499000E9EBE2 /* Build configuration list for PBXProject "FlipBookAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB5B79415ED499000E9EBE2 /* Debug */,
+				ABB5B79515ED499000E9EBE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABB5B79615ED499000E9EBE2 /* Build configuration list for PBXNativeTarget "FlipBookAnimation" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABB5B79715ED499000E9EBE2 /* Debug */,
+				ABB5B79815ED499000E9EBE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABB5B76F15ED499000E9EBE2 /* Project object */;
+}

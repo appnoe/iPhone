@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model name="" userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1800" systemVersion="11E53" minimumToolsVersion="Xcode 4.1" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Activity" representedClassName="Activity" syncable="YES">
+        <attribute name="details" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="end" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="start" attributeType="Date" indexed="YES" syncable="YES"/>
+        <relationship name="site" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Site" inverseName="activities" inverseEntity="Site" syncable="YES"/>
+        <relationship name="team" optional="YES" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="activities" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Contact" representedClassName="Contact" syncable="YES">
+        <attribute name="isHead" attributeType="Boolean" defaultValueString="NO" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="phone" attributeType="String" syncable="YES"/>
+        <relationship name="team" minCount="1" maxCount="1" deletionRule="Nullify" destinationEntity="Team" inverseName="contacts" inverseEntity="Team" syncable="YES"/>
+    </entity>
+    <entity name="Site" representedClassName="Site" syncable="YES">
+        <attribute name="city" attributeType="String" syncable="YES"/>
+        <attribute name="code" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="countryCode" attributeType="String" minValueString="2" maxValueString="2" syncable="YES"/>
+        <attribute name="latitude" optional="YES" attributeType="Double" syncable="YES"/>
+        <attribute name="longitude" optional="YES" attributeType="Double" defaultValueString="0.0" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="street" attributeType="String" syncable="YES"/>
+        <attribute name="zip" attributeType="String" syncable="YES"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Cascade" destinationEntity="Activity" inverseName="site" inverseEntity="Activity" syncable="YES"/>
+    </entity>
+    <entity name="Team" representedClassName="Team" syncable="YES">
+        <attribute name="code" attributeType="String" indexed="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" indexed="YES" syncable="YES"/>
+        <relationship name="activities" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Activity" inverseName="team" inverseEntity="Activity" syncable="YES"/>
+        <relationship name="contacts" toMany="YES" minCount="1" deletionRule="Cascade" destinationEntity="Contact" inverseName="team" inverseEntity="Contact" syncable="YES"/>
+    </entity>
+    <fetchRequest name="teamWithCode" entity="Team" predicateString="code == &quot;code&quot;"/>
+    <elements>
+        <element name="Activity" positionX="-245" positionY="186" width="128" height="120"/>
+        <element name="Contact" positionX="-245" positionY="315" width="128" height="105"/>
+        <element name="Site" positionX="-47" positionY="141" width="128" height="180"/>
+        <element name="Team" positionX="-470" positionY="216" width="128" height="105"/>
+    </elements>
+</model>

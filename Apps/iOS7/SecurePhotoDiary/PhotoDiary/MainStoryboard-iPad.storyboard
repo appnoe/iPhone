@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.1" toolsVersion="2182" systemVersion="11D50" targetRuntime="iOS.CocoaTouch.iPad" propertyAccessControl="none" initialViewController="IxH-rQ-o5N">
+    <dependencies>
+        <deployment defaultVersion="1296" identifier="iOS"/>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="1181"/>
+    </dependencies>
+    <scenes>
+        <!--Photo Diary View Controller - Fototagebuch-->
+        <scene sceneID="qq4-E4-d8J">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="HNK-Bn-9FL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tableViewController id="OCK-JN-PuQ" customClass="PhotoDiaryViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="1tU-JY-71x">
+                        <rect key="frame" x="0.0" y="64" width="320" height="788"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <searchBar key="tableHeaderView" contentMode="redraw" id="0n0-zg-WrW">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <textInputTraits key="textInputTraits"/>
+                            <connections>
+                                <outlet property="delegate" destination="OCK-JN-PuQ" id="Ofg-HV-MMG"/>
+                            </connections>
+                        </searchBar>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="dairyEntryCell" rowHeight="64" id="DKo-dj-kx4" customClass="DiaryEntryCell">
+                                <rect key="frame" x="0.0" y="66" width="320" height="64"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="63"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="-101" contentMode="left" text="" lineBreakMode="tailTruncation" numberOfLines="2" minimumFontSize="10" id="xC6-v6-wxo">
+                                            <rect key="frame" x="64" y="22" width="254" height="40"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" tag="-102" contentMode="left" text="Label" lineBreakMode="tailTruncation" minimumFontSize="10" id="mcc-k7-3CD">
+                                            <rect key="frame" x="64" y="2" width="120" height="18"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <view contentMode="scaleToFill" id="zU6-dK-fxN" customClass="UIControl">
+                                            <rect key="frame" x="2" y="2" width="60" height="60"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" tag="-100" contentMode="scaleToFill" id="iig-DI-otv">
+                                                    <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </tableViewCell>
+                        </prototypes>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Fototagebuch" id="zTV-W2-guW">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="sq8-Xu-msc">
+                            <connections>
+                                <action selector="addItem" destination="OCK-JN-PuQ" id="drq-ht-vmO"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <value key="contentSizeForViewInPopover" type="size" width="320" height="600"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="searchDisplayController" destination="rKc-gh-2KX" id="aT9-Z8-aYE"/>
+                        <outlet property="tableView" destination="1tU-JY-71x" id="jcA-SX-pEI"/>
+                    </connections>
+                </tableViewController>
+                <searchDisplayController id="rKc-gh-2KX">
+                    <connections>
+                        <outlet property="delegate" destination="OCK-JN-PuQ" id="GMr-Nn-wBf"/>
+                        <outlet property="searchBar" destination="0n0-zg-WrW" id="XBJ-sB-wAO"/>
+                        <outlet property="searchContentsController" destination="OCK-JN-PuQ" id="EJq-KI-c6d"/>
+                        <outlet property="searchResultsDataSource" destination="OCK-JN-PuQ" id="6of-OB-yhd"/>
+                        <outlet property="searchResultsDelegate" destination="OCK-JN-PuQ" id="dv3-8F-Pej"/>
+                    </connections>
+                </searchDisplayController>
+            </objects>
+            <point key="canvasLocation" x="559" y="336"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="dQZ-SE-T8f">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8QF-V0-S5n" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <splitViewController id="IxH-rQ-o5N" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <connections>
+                        <segue destination="5yT-qg-TBd" kind="relationship" relationship="masterViewController" id="xHP-PL-cJF"/>
+                        <segue destination="z9T-yo-zJC" kind="relationship" relationship="detailViewController" id="3bT-hp-CeR"/>
+                    </connections>
+                </splitViewController>
+            </objects>
+            <point key="canvasLocation" x="-1369" y="783"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="2xL-bK-396">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x8Q-ef-pdG" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="5yT-qg-TBd" sceneMemberID="viewController">
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <navigationBar key="navigationBar" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" barStyle="blackOpaque" id="FsX-dK-yux">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="OCK-JN-PuQ" kind="relationship" relationship="rootViewController" id="eMh-sZ-bYi"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="13" y="336"/>
+        </scene>
+        <!--Item View Controller - Eintrag-->
+        <scene sceneID="Mtd-cn-tb7">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RbP-bq-Vsd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController id="GpQ-ae-tNi" customClass="ItemViewController" sceneMemberID="viewController">
+                    <view key="view" clipsSubviews="YES" contentMode="scaleToFill" id="PsN-j1-M6l">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" id="N2g-F3-Net" customClass="RotationView">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="916"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="AHn-cS-zdb">
+                                        <rect key="frame" x="10" y="10" width="748" height="500"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" id="OdK-VO-D8c">
+                                        <rect key="frame" x="0.0" y="510" width="768" height="440"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="eRS-Hi-ikj">
+                                                <rect key="frame" x="10" y="10" width="748" height="420"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="17"/>
+                                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                <connections>
+                                                    <outlet property="delegate" destination="GpQ-ae-tNi" id="8MQ-uO-KCT"/>
+                                                    <outlet property="inputAccessoryView" destination="bWs-Ib-U1n" id="VbH-Fu-b6i"/>
+                                                </connections>
+                                            </textView>
+                                        </subviews>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
+                            </view>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="bCc-XO-4SH">
+                                <rect key="frame" x="0.0" y="916" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem enabled="NO" image="twitter.png" id="TI2-RW-ttU">
+                                        <connections>
+                                            <action selector="composeTweet:" destination="GpQ-ae-tNi" id="w0E-uM-kaH"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem tag="100" systemItem="camera" id="C9a-72-C01">
+                                        <connections>
+                                            <action selector="takePhoto:" destination="GpQ-ae-tNi" id="uTj-M3-uAc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem tag="101" systemItem="bookmarks" id="BEa-jP-Ar8">
+                                        <connections>
+                                            <action selector="takePhotoFromLibrary:" destination="GpQ-ae-tNi" id="uzH-rG-Txm"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="QbO-VE-DP8"/>
+                                    <barButtonItem tag="102" image="micro.png" id="EXU-ri-NXI">
+                                        <connections>
+                                            <segue destination="zpg-Cn-a7i" kind="custom" identifier="audioRecorder" customClass="SubviewSegue" id="QHF-xR-DOv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem tag="103" systemItem="play" id="rBO-sl-If8">
+                                        <connections>
+                                            <segue destination="UWt-kn-ecP" kind="custom" identifier="audioPlayer" customClass="SubviewSegue" id="Gsi-aU-n5U"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Eintrag" id="fcI-lt-WZZ">
+                        <barButtonItem key="rightBarButtonItem" systemItem="play" id="x0R-nW-bPY">
+                            <connections>
+                                <segue destination="1c7-gZ-5VX" kind="push" id="1BU-Ac-k8U"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
+                    <connections>
+                        <outlet property="cameraButton" destination="C9a-72-C01" id="h9j-Z1-KyX"/>
+                        <outlet property="imageView" destination="AHn-cS-zdb" id="fda-g2-qE4"/>
+                        <outlet property="photoLibraryButton" destination="BEa-jP-Ar8" id="1HN-Zi-giP"/>
+                        <outlet property="playButton" destination="rBO-sl-If8" id="W9f-uy-UiC"/>
+                        <outlet property="recordButton" destination="EXU-ri-NXI" id="g1l-So-qV1"/>
+                        <outlet property="textView" destination="eRS-Hi-ikj" id="3Bh-bn-BBY"/>
+                        <outlet property="toolbar" destination="bCc-XO-4SH" id="5vu-RJ-V0C"/>
+                        <outlet property="tweetButton" destination="TI2-RW-ttU" id="OdR-Zr-evE"/>
+                    </connections>
+                </viewController>
+                <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackTranslucent" id="bWs-Ib-U1n">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                    <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                    <items>
+                        <barButtonItem systemItem="save" id="4sh-tT-jZG">
+                            <connections>
+                                <action selector="saveText:" destination="GpQ-ae-tNi" id="D7m-dN-pNB"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem style="plain" systemItem="flexibleSpace" id="5NE-Lq-G2N"/>
+                        <barButtonItem systemItem="cancel" id="STh-ZF-QgO">
+                            <connections>
+                                <action selector="revertText:" destination="GpQ-ae-tNi" id="7zB-qu-XTi"/>
+                            </connections>
+                        </barButtonItem>
+                    </items>
+                </toolbar>
+            </objects>
+            <point key="canvasLocation" x="1156" y="1444"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="XOY-Px-3mv">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T8g-tx-CYc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <navigationController definesPresentationContext="YES" id="z9T-yo-zJC" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="zgV-XV-zHe">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="GpQ-ae-tNi" kind="relationship" relationship="rootViewController" id="ng8-t5-fea"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="27" y="1444"/>
+        </scene>
+        <!--Audio Player Controller-->
+        <scene sceneID="9rF-He-cKo">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3lM-zz-WKT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="UWt-kn-ecP" customClass="AudioPlayerController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="6Hn-Ml-1rj">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="110"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="Mcf-LA-Fs7">
+                                <rect key="frame" x="0.0" y="66" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="done" id="e3e-PF-C7q">
+                                        <connections>
+                                            <action selector="stop" destination="UWt-kn-ecP" id="fnQ-mS-eXc"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="udj-Xh-0fk"/>
+                                    <barButtonItem image="play.png" id="D8Y-3M-5EE">
+                                        <connections>
+                                            <action selector="flipPlayback" destination="UWt-kn-ecP" id="X1K-5W-Vhv"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" id="1Sj-eE-hot">
+                                <rect key="frame" x="10" y="40" width="220" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </slider>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="30s" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="HoV-Nk-YCm">
+                                <rect key="frame" x="240" y="40" width="30" height="23"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="f7A-1E-ZtM" customClass="MeterView">
+                                <rect key="frame" x="10" y="10" width="260" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="KaI-dh-pWq" userLabel="Large White Activity Indicator">
+                                <rect key="frame" x="121" y="37" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="KaI-dh-pWq" id="hUX-5f-HkO"/>
+                        <outlet property="meterView" destination="f7A-1E-ZtM" id="JKC-lp-PLl"/>
+                        <outlet property="slider" destination="1Sj-eE-hot" id="5CY-8R-S4U"/>
+                        <outlet property="timeLabel" destination="HoV-Nk-YCm" id="Rc2-ld-Pca"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2206" y="1684"/>
+        </scene>
+        <!--Audio Recorder Controller-->
+        <scene sceneID="R6P-yE-gFX">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4HK-nd-CEY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController autoresizesArchivedViewToFullSize="NO" id="zpg-Cn-a7i" customClass="AudioRecorderController" sceneMemberID="viewController">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="7Dp-N8-3Px">
+                        <rect key="frame" x="0.0" y="0.0" width="280" height="110"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" barStyle="blackOpaque" id="xK4-Bf-tcY">
+                                <rect key="frame" x="0.0" y="66" width="280" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
+                                <items>
+                                    <barButtonItem systemItem="save" id="umw-QP-bEZ">
+                                        <connections>
+                                            <action selector="save:" destination="zpg-Cn-a7i" id="NMl-Or-hox"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="cancel" id="mEf-AH-buk">
+                                        <connections>
+                                            <action selector="cancel:" destination="zpg-Cn-a7i" id="v3b-c2-qUJ"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="7sE-hW-AtY"/>
+                                    <barButtonItem image="record.png" id="6w2-Ql-Vri">
+                                        <connections>
+                                            <action selector="flipRecording:" destination="zpg-Cn-a7i" id="ASs-eE-MHA"/>
+                                        </connections>
+                                    </barButtonItem>
+                                    <barButtonItem systemItem="stop" id="l8n-cy-EZe">
+                                        <connections>
+                                            <action selector="clear" destination="zpg-Cn-a7i" id="aod-QE-RpE"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <progressView opaque="NO" contentMode="scaleToFill" progress="0.5" id="4Ub-mL-HkF">
+                                <rect key="frame" x="10" y="45" width="220" height="9"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="30s" textAlignment="right" lineBreakMode="tailTruncation" minimumFontSize="10" id="nmI-vz-Hdy">
+                                <rect key="frame" x="240" y="40" width="30" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="14"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" id="qoD-eD-rlq" customClass="MeterView">
+                                <rect key="frame" x="10" y="10" width="260" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="I91-QA-jg2">
+                                <rect key="frame" x="121" y="37" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <nil key="simulatedStatusBarMetrics"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <nil key="simulatedBottomBarMetrics"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="activityIndicator" destination="I91-QA-jg2" id="Df7-TO-o6X"/>
+                        <outlet property="meterView" destination="qoD-eD-rlq" id="pWh-Do-lMb"/>
+                        <outlet property="progressView" destination="4Ub-mL-HkF" id="pkl-Iw-2RD"/>
+                        <outlet property="recordButton" destination="6w2-Ql-Vri" id="CBW-5Y-5sT"/>
+                        <outlet property="timeLabel" destination="nmI-vz-Hdy" id="uGK-em-FeT"/>
+                        <outlet property="toolbar" destination="xK4-Bf-tcY" id="seC-dA-avb"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="2190" y="2103"/>
+        </scene>
+        <!--Slide Show Controller - Diashow-->
+        <scene sceneID="yw2-iH-xkI">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jUZ-Mi-Cxz" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="slideshow" id="1c7-gZ-5VX" customClass="SlideShowController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ukJ-Hb-ahN" userLabel="View">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="0kb-Qy-vKF">
+                                <rect key="frame" x="-768" y="0.0" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="Hdp-Od-UI3">
+                                <rect key="frame" x="0.0" y="0.0" width="768" height="960"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" adjustsFontSizeToFit="NO" id="IXL-zy-cAO">
+                                <rect key="frame" x="20" y="875" width="728" height="85"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Arial-ItalicMT" family="Arial" pointSize="18"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" cocoaTouchSystemColor="darkTextColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Diashow" id="kLY-Au-AwG"/>
+                    <simulatedStatusBarMetrics key="simulatedStatusBarMetrics" statusBarStyle="blackTranslucent"/>
+                    <connections>
+                        <outlet property="textLabel" destination="IXL-zy-cAO" id="Vus-jQ-Dlx"/>
+                        <outletCollection property="imageViews" destination="0kb-Qy-vKF" id="ihy-H1-oHT"/>
+                        <outletCollection property="imageViews" destination="Hdp-Od-UI3" id="3JM-pZ-pXd"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="1034" y="336"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="micro.png" width="24" height="24"/>
+        <image name="play.png" width="12" height="12"/>
+        <image name="record.png" width="18" height="18"/>
+        <image name="twitter.png" width="24" height="24"/>
+    </resources>
+    <classes>
+        <class className="AudioPlayerController" superclassName="SubviewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioPlayerController.h"/>
+            <relationships>
+                <relationship kind="action" name="flipPlayback"/>
+                <relationship kind="action" name="startSearching"/>
+                <relationship kind="action" name="stop"/>
+                <relationship kind="action" name="updatePosition"/>
+                <relationship kind="action" name="updateTimeLabel"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="meterView" candidateClass="MeterView"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="slider" candidateClass="UISlider"/>
+                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
+            </relationships>
+        </class>
+        <class className="AudioRecorderController" superclassName="SubviewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/AudioRecorderController.h"/>
+            <relationships>
+                <relationship kind="action" name="cancel:"/>
+                <relationship kind="action" name="flipRecording:"/>
+                <relationship kind="action" name="save:"/>
+                <relationship kind="outlet" name="activityIndicator" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="delegate"/>
+                <relationship kind="outlet" name="meterView" candidateClass="MeterView"/>
+                <relationship kind="outlet" name="progressView" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="recordButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="timeLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+            </relationships>
+        </class>
+        <class className="DiaryEntryCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/DiaryEntryCell.h"/>
+        </class>
+        <class className="ItemViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ItemViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="composeTweet:"/>
+                <relationship kind="action" name="revertText:"/>
+                <relationship kind="action" name="saveText:"/>
+                <relationship kind="action" name="takePhoto:"/>
+                <relationship kind="action" name="takePhotoFromLibrary:"/>
+                <relationship kind="outlet" name="cameraButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="imagePicker" candidateClass="UIImagePickerController"/>
+                <relationship kind="outlet" name="imageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="photoLibraryButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="playButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="recordButton" candidateClass="UIBarButtonItem"/>
+                <relationship kind="outlet" name="textView" candidateClass="UITextView"/>
+                <relationship kind="outlet" name="toolbar" candidateClass="UIToolbar"/>
+                <relationship kind="outlet" name="tweetButton" candidateClass="UIBarButtonItem"/>
+            </relationships>
+        </class>
+        <class className="MeterView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/MeterView.h"/>
+        </class>
+        <class className="PhotoDiaryViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/PhotoDiaryViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="addItem"/>
+                <relationship kind="action" name="playSound:"/>
+                <relationship kind="outlet" name="searchDisplayController" candidateClass="UISearchDisplayController"/>
+                <relationship kind="outlet" name="tableView" candidateClass="UITableView"/>
+            </relationships>
+        </class>
+        <class className="RotationView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/RotationView.h"/>
+        </class>
+        <class className="SlideShowController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SlideShowController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="textLabel" candidateClass="UILabel"/>
+                <relationship kind="outletCollection" name="imageViews" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="SubviewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/SubviewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="delegate"/>
+            </relationships>
+        </class>
+        <class className="UITextView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UITextView.h"/>
+            <relationships>
+                <relationship kind="outlet" name="inputAccessoryView" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>

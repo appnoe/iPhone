@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <deployment defaultVersion="1280" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
+    </dependencies>
+    <scenes>
+        <!--Scrollen und Zoomen-->
+        <scene sceneID="5">
+            <objects>
+                <viewController storyboardIdentifier="image" id="2" userLabel="Scrollen und Zoomen" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" minimumZoomScale="0.25" maximumZoomScale="4" id="H1v-Hx-WHv" customClass="ScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView contentMode="scaleToFill" image="flower.jpg" id="vaH-by-OYw">
+                                        <rect key="frame" x="0.0" y="0.0" width="1280" height="870"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="0KP-ut-gjE" appends="YES" id="jSB-qm-Soj"/>
+                                        </connections>
+                                    </imageView>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="gzi-iV-X3w">
+                                        <rect key="frame" x="101" y="401" width="118" height="29"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </slider>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <inset key="contentInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <connections>
+                                    <outlet property="delegate" destination="2" id="hiq-Bz-0wH"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="vaH-by-OYw" id="8D1-ZU-YMR"/>
+                        <outlet property="scrollView" destination="H1v-Hx-WHv" id="UFp-dn-LHF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="0KP-ut-gjE">
+                    <connections>
+                        <action selector="zoomIn:" destination="2" id="5Ic-VR-r0I"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="159" y="275"/>
+        </scene>
+        <!--Ganz großes Kino-->
+        <scene sceneID="OWG-GN-Rud">
+            <objects>
+                <viewController storyboardIdentifier="tiledImage" id="C1c-zp-zTE" userLabel="Ganz großes Kino" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Wwg-Jq-qeC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" delaysContentTouches="NO" minimumZoomScale="0.25" maximumZoomScale="4" id="Yao-Md-RNl" customClass="ScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="rZE-qI-3FX" customClass="TiledImageView">
+                                        <rect key="frame" x="0.0" y="0.0" width="1280" height="850"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="pAn-h7-zPX" appends="YES" id="zxN-Jx-WZ5"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outlet property="delegate" destination="C1c-zp-zTE" id="3Wc-VU-YHh"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="rZE-qI-3FX" id="GeW-6E-PNN"/>
+                        <outlet property="scrollView" destination="Yao-Md-RNl" id="WHC-Q5-9gr"/>
+                    </connections>
+                </viewController>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="pAn-h7-zPX">
+                    <connections>
+                        <action selector="zoomIn:" destination="C1c-zp-zTE" id="dUg-j6-Fno"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XCG-UT-AUQ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="150" y="1527"/>
+        </scene>
+        <!--Scharfe Kurven-->
+        <scene sceneID="IrV-0l-XZB">
+            <objects>
+                <viewController storyboardIdentifier="map" id="mFz-Rs-Suk" userLabel="Scharfe Kurven" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Fl8-hj-yNp">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" delaysContentTouches="NO" minimumZoomScale="0.25" maximumZoomScale="4" id="fbe-wS-tOY" customClass="ScrollView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" id="kJp-Iu-OCe">
+                                        <rect key="frame" x="0.0" y="73" width="1000" height="1000"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" id="fPZ-WM-Tbs" customClass="LineView">
+                                                <rect key="frame" x="0.0" y="100" width="200" height="200"/>
+                                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                                <color key="backgroundColor" white="0.80000000000000004" alpha="1" colorSpace="calibratedWhite"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="5OW-df-8em" appends="YES" id="OAs-pV-ojU"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <gestureRecognizers/>
+                                <inset key="contentInset" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <connections>
+                                    <outlet property="delegate" destination="mFz-Rs-Suk" id="Z93-iw-KYk"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="contentView" destination="kJp-Iu-OCe" id="sjM-Ud-HLi"/>
+                        <outlet property="scrollView" destination="fbe-wS-tOY" id="UOo-Mk-von"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Izb-sT-KYl" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="5OW-df-8em">
+                    <connections>
+                        <action selector="zoomIn:" destination="mFz-Rs-Suk" id="Pwq-oe-wM8"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="17" y="846"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flower.jpg" width="1280" height="850"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="320" height="480"/>
+            <size key="landscapeSize" width="480" height="320"/>
+        </simulatedScreenMetrics>
+    </simulatedMetricsContainer>
+</document>

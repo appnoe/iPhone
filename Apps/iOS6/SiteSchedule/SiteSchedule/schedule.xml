@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schedule>
+    <teams>
+        <team code="100">
+            <name>Betonbauer (Köln)</name>
+            <contact phone="+49 163 1234567" isHead="YES">Hr. Meier</contact>
+            <contact phone="+49 164 223344">Hr. Waldvogel</contact>
+        </team>
+        <team code="101">
+            <name>Betonbauer (Bonn)</name>
+            <contact phone="+49 165 1234567" isHead="YES">Hr. Friese</contact>
+        </team>
+        <team code="200">
+            <name>Maurer (Köln)</name>
+            <contact phone="+49 163 777666" isHead="YES">Hr. Block</contact>
+            <contact phone="+49 221 223344">Fr. Müller</contact>
+        </team>
+        <team code="201">
+            <name>Maurer (Bonn)</name>
+            <contact phone="+49 163 223322" isHead="YES">Fr. Bolle</contact>
+        </team>
+        <team code="202">
+            <name>Maurer (Aachen)</name>
+            <contact phone="+49 163 111122" isHead="YES">Hr. Prinz</contact>
+        </team>
+        <team code="300">
+            <name>Steinmetze</name>
+            <contact phone="+49 162 321123" isHead="YES">Hr. Klopper</contact>
+        </team>
+        <team code="400">
+            <name>Schweißer</name>
+            <contact phone="+49 162 211221" isHead="YES">Fr. Nagel</contact>
+        </team>
+    </teams>
+    <sites>
+        <site code="10001">
+            <name>Kölner Dom</name>
+            <street>Domkloster 4</street>
+            <city zip="50667">Köln</city>
+            <countryCode>de</countryCode>
+            <activities>
+                <activity team="300" start="2012-01-02 8:00" end="2012-05-31 18:00">Portal ausbessern</activity>
+                <activity team="100" start="2012-03-01 6:00" end="2012-03-31 12:00">Stabilisierungsarbeiten</activity>
+                <activity team="200" start="2012-02-15 7:00" end="2012-02-30 16:00">Restaurierung Nordturm</activity>
+                <activity team="201" start="2012-02-10 10:00" end="2012-03-20 15:00">Portal ausbessern</activity>
+                <activity team="400" start="2012-02-25 8:00" end="2012-08-13 18:00">Dachkonstruktion ausbessern</activity>
+            </activities>
+        </site>    
+        <site code="10002">
+            <name>U-Bahnhaltestelle Chlodwigplatz</name>
+            <street>Chlodwigplatz</street>
+            <city zip="50668">Köln</city>
+            <countryCode>de</countryCode>
+            <activities>
+                <activity team="400" start="2012-01-02 8:00" end="2012-02-15 18:00">Stahlträger aufstellen</activity>
+                <activity team="100" start="2012-02-15 8:00" end="2012-02-29 18:00">Verschalung</activity>
+                <activity team="101" start="2012-03-01 6:00" end="2012-03-15 12:00">Tunnelwände gießen</activity>
+                <activity team="400" start="2012-02-16 7:00" end="2012-02-24 16:00">Einbau Treppengestell</activity>
+            </activities>
+        </site>    
+        <site code="10003">
+            <name>Zentralmoschee</name>
+            <street>Venloer Str. 160</street>
+            <city zip="50823">Köln</city>
+            <countryCode>de</countryCode>
+            <activities>
+                <activity team="100" start="2012-01-05 8:00" end="2012-02-09 18:00">Fundament gießen</activity>
+                <activity team="101" start="2012-02-01 6:00" end="2012-02-25 12:00">Wände gießen</activity>
+                <activity team="100" start="2012-04-10 7:00" end="2012-04-24 16:00">Verschalung</activity>
+            </activities>
+        </site>    
+    </sites>
+</schedule>

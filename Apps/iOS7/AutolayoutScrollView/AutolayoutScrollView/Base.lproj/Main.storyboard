@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="Rw6-dt-P1g">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="ioM-XG-oDn">
+            <objects>
+                <navigationController definesPresentationContext="YES" id="Rw6-dt-P1g" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="rIW-sn-Tg5">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="1Gj-gO-2U8" kind="relationship" relationship="rootViewController" id="eZZ-nj-rF0"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="G7E-ff-d2h" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-619" y="145"/>
+        </scene>
+        <!--View Controller - Scrollviews-->
+        <scene sceneID="FOR-Sb-9Z4">
+            <objects>
+                <viewController id="1Gj-gO-2U8" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="f8R-kg-BTk"/>
+                        <viewControllerLayoutGuide type="bottom" id="iOK-jc-0Lc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="6ch-VI-Dft">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdD-Vp-PHH">
+                                <rect key="frame" x="77" y="100" width="166" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Auto Layout Constraints">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="vXZ-lx-hvc" kind="push" id="n0j-1M-syP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="noR-ty-EKn">
+                                <rect key="frame" x="75" y="294" width="170" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Explicit Set Content Size">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <segue destination="BCh-Oe-o7a" kind="push" id="oh2-PP-Lji"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="hdD-Vp-PHH" secondAttribute="centerX" id="GBc-BV-FQY"/>
+                            <constraint firstItem="iOK-jc-0Lc" firstAttribute="top" secondItem="noR-ty-EKn" secondAttribute="bottom" constant="180" id="Xz5-eP-Mpb"/>
+                            <constraint firstItem="hdD-Vp-PHH" firstAttribute="top" secondItem="f8R-kg-BTk" secondAttribute="bottom" constant="100" id="gSP-Lp-dwv"/>
+                            <constraint firstAttribute="centerX" secondItem="noR-ty-EKn" secondAttribute="centerX" id="j3z-im-pfU"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Scrollviews" id="yKX-qX-pmS"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dxf-Br-vJx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-192" y="145"/>
+        </scene>
+        <!--Autolayout Scroll View Controller - Auto Layout Constraints-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="AutolayoutScrollViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="08s-o2-rzq"/>
+                        <viewControllerLayoutGuide type="bottom" id="Xsi-sw-UVg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="h4U-k2-Gr0">
+                                <rect key="frame" x="20" y="20" width="280" height="464"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="flower.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="wtD-Mz-M0P">
+                                        <rect key="frame" x="0.0" y="0.0" width="1280" height="850"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="wtD-Mz-M0P" secondAttribute="bottom" id="7ud-Xc-VQf"/>
+                                    <constraint firstItem="wtD-Mz-M0P" firstAttribute="leading" secondItem="h4U-k2-Gr0" secondAttribute="leading" id="oAy-cE-KVX"/>
+                                    <constraint firstItem="wtD-Mz-M0P" firstAttribute="top" secondItem="h4U-k2-Gr0" secondAttribute="top" id="toH-kh-HVH"/>
+                                    <constraint firstAttribute="trailing" secondItem="wtD-Mz-M0P" secondAttribute="trailing" id="utp-th-J2s"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="h4U-k2-Gr0" secondAttribute="trailing" constant="20" id="3m7-su-9GM"/>
+                            <constraint firstItem="Xsi-sw-UVg" firstAttribute="top" secondItem="h4U-k2-Gr0" secondAttribute="bottom" constant="20" id="C0C-Qz-M6U"/>
+                            <constraint firstItem="h4U-k2-Gr0" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="H7S-Kr-OcQ"/>
+                            <constraint firstItem="h4U-k2-Gr0" firstAttribute="top" secondItem="08s-o2-rzq" secondAttribute="bottom" constant="20" id="ndk-NG-W9Y"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Auto Layout Constraints" id="R54-oI-8nA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="-290"/>
+        </scene>
+        <!--Content Size Scroll View Controller - Explicit Content Size-->
+        <scene sceneID="O5i-bh-HSZ">
+            <objects>
+                <viewController id="BCh-Oe-o7a" customClass="ContentSizeScrollViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NBc-wm-u6o"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ut-UD-nlH"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="zdl-HZ-Cak">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rlS-gd-Se0">
+                                <rect key="frame" x="20" y="20" width="280" height="464"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="flower.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="d8O-DH-0Fx">
+                                        <rect key="frame" x="0.0" y="0.0" width="1280" height="850"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rlS-gd-Se0" firstAttribute="top" secondItem="NBc-wm-u6o" secondAttribute="bottom" constant="20" id="VvW-x0-WTt"/>
+                            <constraint firstItem="7ut-UD-nlH" firstAttribute="top" secondItem="rlS-gd-Se0" secondAttribute="bottom" constant="20" id="X3c-cu-0Ze"/>
+                            <constraint firstAttribute="trailing" secondItem="rlS-gd-Se0" secondAttribute="trailing" constant="20" id="ePJ-xh-IOt"/>
+                            <constraint firstItem="rlS-gd-Se0" firstAttribute="leading" secondItem="zdl-HZ-Cak" secondAttribute="leading" constant="20" id="vZP-MU-hkb"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Explicit Content Size" id="UCK-kz-vmt"/>
+                    <connections>
+                        <outlet property="contentView" destination="d8O-DH-0Fx" id="tDa-QO-fDq"/>
+                        <outlet property="scrollView" destination="rlS-gd-Se0" id="DGb-RX-6KI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ToE-nJ-jWt" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="342" y="434"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="flower.jpg" width="1280" height="850"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

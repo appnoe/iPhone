@@ -1,0 +1,429 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB6229461959F1850049ABA4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6229451959F1850049ABA4 /* AppDelegate.swift */; };
+		AB6229481959F1850049ABA4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB6229471959F1850049ABA4 /* Images.xcassets */; };
+		AB6229541959F1850049ABA4 /* MixedSegueTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB6229531959F1850049ABA4 /* MixedSegueTests.swift */; };
+		AB62295E1959F1CC0049ABA4 /* SegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB62295D1959F1CC0049ABA4 /* SegueViewController.swift */; };
+		AB6229631959F1F60049ABA4 /* Cube.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6229601959F1F60049ABA4 /* Cube.m */; };
+		AB6229641959F1F60049ABA4 /* ResultViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB6229621959F1F60049ABA4 /* ResultViewController.m */; };
+		AB62296D1959F4640049ABA4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB62296F1959F4640049ABA4 /* Main.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB62294E1959F1850049ABA4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB6229381959F1850049ABA4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB62293F1959F1850049ABA4;
+			remoteInfo = MixedSegue;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB6229401959F1850049ABA4 /* MixedSegue.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MixedSegue.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6229441959F1850049ABA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6229451959F1850049ABA4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		AB6229471959F1850049ABA4 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB62294D1959F1850049ABA4 /* MixedSegueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MixedSegueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB6229521959F1850049ABA4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB6229531959F1850049ABA4 /* MixedSegueTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MixedSegueTests.swift; sourceTree = "<group>"; };
+		AB62295D1959F1CC0049ABA4 /* SegueViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SegueViewController.swift; sourceTree = "<group>"; };
+		AB62295F1959F1F60049ABA4 /* Cube.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cube.h; sourceTree = "<group>"; };
+		AB6229601959F1F60049ABA4 /* Cube.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Cube.m; sourceTree = "<group>"; };
+		AB6229611959F1F60049ABA4 /* ResultViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultViewController.h; sourceTree = "<group>"; };
+		AB6229621959F1F60049ABA4 /* ResultViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultViewController.m; sourceTree = "<group>"; };
+		AB6229651959F2500049ABA4 /* MixedSegue-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MixedSegue-Bridging-Header.h"; sourceTree = "<group>"; };
+		AB62296E1959F4640049ABA4 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB62293D1959F1850049ABA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB62294A1959F1850049ABA4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB6229371959F1850049ABA4 = {
+			isa = PBXGroup;
+			children = (
+				AB6229421959F1850049ABA4 /* MixedSegue */,
+				AB6229501959F1850049ABA4 /* MixedSegueTests */,
+				AB6229411959F1850049ABA4 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB6229411959F1850049ABA4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB6229401959F1850049ABA4 /* MixedSegue.app */,
+				AB62294D1959F1850049ABA4 /* MixedSegueTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB6229421959F1850049ABA4 /* MixedSegue */ = {
+			isa = PBXGroup;
+			children = (
+				AB62296F1959F4640049ABA4 /* Main.storyboard */,
+				AB62295F1959F1F60049ABA4 /* Cube.h */,
+				AB6229601959F1F60049ABA4 /* Cube.m */,
+				AB6229611959F1F60049ABA4 /* ResultViewController.h */,
+				AB6229621959F1F60049ABA4 /* ResultViewController.m */,
+				AB62295D1959F1CC0049ABA4 /* SegueViewController.swift */,
+				AB6229451959F1850049ABA4 /* AppDelegate.swift */,
+				AB6229471959F1850049ABA4 /* Images.xcassets */,
+				AB6229431959F1850049ABA4 /* Supporting Files */,
+			);
+			path = MixedSegue;
+			sourceTree = "<group>";
+		};
+		AB6229431959F1850049ABA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB6229441959F1850049ABA4 /* Info.plist */,
+				AB6229651959F2500049ABA4 /* MixedSegue-Bridging-Header.h */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB6229501959F1850049ABA4 /* MixedSegueTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB6229531959F1850049ABA4 /* MixedSegueTests.swift */,
+				AB6229511959F1850049ABA4 /* Supporting Files */,
+			);
+			path = MixedSegueTests;
+			sourceTree = "<group>";
+		};
+		AB6229511959F1850049ABA4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB6229521959F1850049ABA4 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB62293F1959F1850049ABA4 /* MixedSegue */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB6229571959F1850049ABA4 /* Build configuration list for PBXNativeTarget "MixedSegue" */;
+			buildPhases = (
+				AB62293C1959F1850049ABA4 /* Sources */,
+				AB62293D1959F1850049ABA4 /* Frameworks */,
+				AB62293E1959F1850049ABA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MixedSegue;
+			productName = MixedSegue;
+			productReference = AB6229401959F1850049ABA4 /* MixedSegue.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB62294C1959F1850049ABA4 /* MixedSegueTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB62295A1959F1850049ABA4 /* Build configuration list for PBXNativeTarget "MixedSegueTests" */;
+			buildPhases = (
+				AB6229491959F1850049ABA4 /* Sources */,
+				AB62294A1959F1850049ABA4 /* Frameworks */,
+				AB62294B1959F1850049ABA4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB62294F1959F1850049ABA4 /* PBXTargetDependency */,
+			);
+			name = MixedSegueTests;
+			productName = MixedSegueTests;
+			productReference = AB62294D1959F1850049ABA4 /* MixedSegueTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB6229381959F1850049ABA4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Clemens Wagner";
+				TargetAttributes = {
+					AB62293F1959F1850049ABA4 = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					AB62294C1959F1850049ABA4 = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = AB62293F1959F1850049ABA4;
+					};
+				};
+			};
+			buildConfigurationList = AB62293B1959F1850049ABA4 /* Build configuration list for PBXProject "MixedSegue" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AB6229371959F1850049ABA4;
+			productRefGroup = AB6229411959F1850049ABA4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB62293F1959F1850049ABA4 /* MixedSegue */,
+				AB62294C1959F1850049ABA4 /* MixedSegueTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB62293E1959F1850049ABA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6229481959F1850049ABA4 /* Images.xcassets in Resources */,
+				AB62296D1959F4640049ABA4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB62294B1959F1850049ABA4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB62293C1959F1850049ABA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB62295E1959F1CC0049ABA4 /* SegueViewController.swift in Sources */,
+				AB6229631959F1F60049ABA4 /* Cube.m in Sources */,
+				AB6229461959F1850049ABA4 /* AppDelegate.swift in Sources */,
+				AB6229641959F1F60049ABA4 /* ResultViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB6229491959F1850049ABA4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB6229541959F1850049ABA4 /* MixedSegueTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB62294F1959F1850049ABA4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB62293F1959F1850049ABA4 /* MixedSegue */;
+			targetProxy = AB62294E1959F1850049ABA4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB62296F1959F4640049ABA4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB62296E1959F4640049ABA4 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB6229551959F1850049ABA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		AB6229561959F1850049ABA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				METAL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB6229581959F1850049ABA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MixedSegue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedSegue/MixedSegue-Bridging-Header.h";
+			};
+			name = Debug;
+		};
+		AB6229591959F1850049ABA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = MixedSegue/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "MixedSegue/MixedSegue-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		AB62295B1959F1850049ABA4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MixedSegue.app/MixedSegue";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MixedSegueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Debug;
+		};
+		AB62295C1959F1850049ABA4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MixedSegue.app/MixedSegue";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = MixedSegueTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB62293B1959F1850049ABA4 /* Build configuration list for PBXProject "MixedSegue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6229551959F1850049ABA4 /* Debug */,
+				AB6229561959F1850049ABA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB6229571959F1850049ABA4 /* Build configuration list for PBXNativeTarget "MixedSegue" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB6229581959F1850049ABA4 /* Debug */,
+				AB6229591959F1850049ABA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB62295A1959F1850049ABA4 /* Build configuration list for PBXNativeTarget "MixedSegueTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB62295B1959F1850049ABA4 /* Debug */,
+				AB62295C1959F1850049ABA4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB6229381959F1850049ABA4 /* Project object */;
+}

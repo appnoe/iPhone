@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6245" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6238"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AlarmClock" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d5i-De-flt"/>
+                        <viewControllerLayoutGuide type="bottom" id="3KS-gq-DHT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Jmw-qd-Y1S" customClass="ClockView" customModule="AlarmClock" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SVl-xc-OTj" customClass="ClockControl" customModule="AlarmClock" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                        <gestureRecognizers/>
+                                        <connections>
+                                            <action selector="updateAlarm" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lBj-eN-KBn"/>
+                                            <action selector="updateTimeLabel" destination="vXZ-lx-hvc" eventType="valueChanged" id="JT4-dU-qKT"/>
+                                        </connections>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jmw-qd-Y1S" secondAttribute="height" multiplier="1:1" id="8Sz-nY-Mge"/>
+                                    <constraint firstAttribute="bottom" secondItem="SVl-xc-OTj" secondAttribute="bottom" id="9g3-gD-BqT"/>
+                                    <constraint firstItem="SVl-xc-OTj" firstAttribute="top" secondItem="Jmw-qd-Y1S" secondAttribute="top" id="ELa-99-zkm"/>
+                                    <constraint firstItem="SVl-xc-OTj" firstAttribute="leading" secondItem="Jmw-qd-Y1S" secondAttribute="leading" id="MLh-JT-rcH"/>
+                                    <constraint firstAttribute="trailing" secondItem="SVl-xc-OTj" secondAttribute="trailing" id="ujp-5v-pyn"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="secondHandColor">
+                                        <color key="value" red="1" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="E29-U9-9Zg" appends="YES" id="NkL-vn-EXN"/>
+                                </connections>
+                            </view>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZ4-UV-egm">
+                                <rect key="frame" x="384" y="563" width="200" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="8ni-XI-fhJ"/>
+                                    <constraint firstAttribute="height" constant="21" id="sG5-Y3-tif"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3KS-gq-DHT" firstAttribute="top" secondItem="BZ4-UV-egm" secondAttribute="bottom" constant="16" id="3Zi-7f-csp"/>
+                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="Jmw-qd-Y1S" secondAttribute="trailing" id="5kp-q4-Gxs"/>
+                            <constraint firstAttribute="trailing" secondItem="BZ4-UV-egm" secondAttribute="trailing" constant="16" id="B3S-ou-nmT"/>
+                            <constraint firstItem="Jmw-qd-Y1S" firstAttribute="width" secondItem="kh9-bI-dsS" secondAttribute="width" priority="750" id="F1t-An-wjL"/>
+                            <constraint firstItem="Jmw-qd-Y1S" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" id="F9s-3t-att"/>
+                            <constraint firstItem="Jmw-qd-Y1S" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Oxh-Je-uoB"/>
+                            <constraint firstItem="Jmw-qd-Y1S" firstAttribute="height" secondItem="kh9-bI-dsS" secondAttribute="height" priority="750" id="sQc-Ss-Oc2"/>
+                            <constraint firstItem="3KS-gq-DHT" firstAttribute="top" relation="greaterThanOrEqual" secondItem="Jmw-qd-Y1S" secondAttribute="bottom" id="sTs-fh-Mfy"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="clockControl" destination="SVl-xc-OTj" id="5TU-dq-EaX"/>
+                        <outlet property="clockView" destination="Jmw-qd-Y1S" id="D0v-Br-0wU"/>
+                        <outlet property="timeLabel" destination="BZ4-UV-egm" id="4Sv-Vn-1I4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="E29-U9-9Zg">
+                    <connections>
+                        <action selector="switchAlarm:" destination="vXZ-lx-hvc" id="ypO-gf-lhE"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="-147" y="332"/>
+        </scene>
+    </scenes>
+</document>

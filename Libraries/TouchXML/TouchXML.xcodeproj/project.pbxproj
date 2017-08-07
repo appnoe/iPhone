@@ -1,0 +1,428 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXAggregateTarget section */
+		ABE488EA159A3977001928DA /* TouchXML Universal Framework */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = ABE488EB159A3977001928DA /* Build configuration list for PBXAggregateTarget "TouchXML Universal Framework" */;
+			buildPhases = (
+				ABE488EE159A3984001928DA /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "TouchXML Universal Framework";
+			productName = "TouchXML Universal Framework";
+		};
+/* End PBXAggregateTarget section */
+
+/* Begin PBXBuildFile section */
+		AB8198FD1597990600ACFDD6 /* CXHTMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198E81597990600ACFDD6 /* CXHTMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8198FE1597990600ACFDD6 /* CXHTMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198E91597990600ACFDD6 /* CXHTMLDocument.m */; };
+		AB8198FF1597990600ACFDD6 /* CXMLDocument_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198EA1597990600ACFDD6 /* CXMLDocument_PrivateExtensions.h */; };
+		AB8199001597990600ACFDD6 /* CXMLDocument_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198EB1597990600ACFDD6 /* CXMLDocument_PrivateExtensions.m */; };
+		AB8199011597990600ACFDD6 /* CXMLDocument.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198EC1597990600ACFDD6 /* CXMLDocument.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8199021597990600ACFDD6 /* CXMLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198ED1597990600ACFDD6 /* CXMLDocument.m */; };
+		AB8199031597990600ACFDD6 /* CXMLElement_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198EE1597990600ACFDD6 /* CXMLElement_CreationExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8199041597990600ACFDD6 /* CXMLElement_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198EF1597990600ACFDD6 /* CXMLElement_CreationExtensions.m */; };
+		AB8199051597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198F01597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8199061597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198F11597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.m */; };
+		AB8199071597990600ACFDD6 /* CXMLElement.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198F21597990600ACFDD6 /* CXMLElement.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8199081597990600ACFDD6 /* CXMLElement.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198F31597990600ACFDD6 /* CXMLElement.m */; };
+		AB8199091597990600ACFDD6 /* CXMLNamespaceNode.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198F41597990600ACFDD6 /* CXMLNamespaceNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB81990A1597990600ACFDD6 /* CXMLNamespaceNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198F51597990600ACFDD6 /* CXMLNamespaceNode.m */; };
+		AB81990B1597990600ACFDD6 /* CXMLNode_PrivateExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198F61597990600ACFDD6 /* CXMLNode_PrivateExtensions.h */; };
+		AB81990C1597990600ACFDD6 /* CXMLNode_PrivateExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198F71597990600ACFDD6 /* CXMLNode_PrivateExtensions.m */; };
+		AB81990D1597990600ACFDD6 /* CXMLNode_XPathExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198F81597990600ACFDD6 /* CXMLNode_XPathExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB81990E1597990600ACFDD6 /* CXMLNode_XPathExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198F91597990600ACFDD6 /* CXMLNode_XPathExtensions.m */; };
+		AB81990F1597990600ACFDD6 /* CXMLNode.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198FA1597990600ACFDD6 /* CXMLNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8199101597990600ACFDD6 /* CXMLNode.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8198FB1597990600ACFDD6 /* CXMLNode.m */; };
+		AB8199111597990600ACFDD6 /* TouchXML.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8198FC1597990600ACFDD6 /* TouchXML.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8199161597991100ACFDD6 /* CXMLDocument_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8199121597991100ACFDD6 /* CXMLDocument_CreationExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8199171597991100ACFDD6 /* CXMLDocument_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8199131597991100ACFDD6 /* CXMLDocument_CreationExtensions.m */; };
+		AB8199181597991100ACFDD6 /* CXMLNode_CreationExtensions.h in Headers */ = {isa = PBXBuildFile; fileRef = AB8199141597991100ACFDD6 /* CXMLNode_CreationExtensions.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB8199191597991100ACFDD6 /* CXMLNode_CreationExtensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB8199151597991100ACFDD6 /* CXMLNode_CreationExtensions.m */; };
+		ABE488F7159A3FA7001928DA /* CTidy.h in Headers */ = {isa = PBXBuildFile; fileRef = ABE488F5159A3FA7001928DA /* CTidy.h */; };
+		ABE488F8159A3FA7001928DA /* CTidy.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE488F6159A3FA7001928DA /* CTidy.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB8198E81597990600ACFDD6 /* CXHTMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXHTMLDocument.h; sourceTree = "<group>"; };
+		AB8198E91597990600ACFDD6 /* CXHTMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXHTMLDocument.m; sourceTree = "<group>"; };
+		AB8198EA1597990600ACFDD6 /* CXMLDocument_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_PrivateExtensions.h; sourceTree = "<group>"; };
+		AB8198EB1597990600ACFDD6 /* CXMLDocument_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_PrivateExtensions.m; sourceTree = "<group>"; };
+		AB8198EC1597990600ACFDD6 /* CXMLDocument.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument.h; sourceTree = "<group>"; };
+		AB8198ED1597990600ACFDD6 /* CXMLDocument.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument.m; sourceTree = "<group>"; };
+		AB8198EE1597990600ACFDD6 /* CXMLElement_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_CreationExtensions.h; sourceTree = "<group>"; };
+		AB8198EF1597990600ACFDD6 /* CXMLElement_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_CreationExtensions.m; sourceTree = "<group>"; };
+		AB8198F01597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement_ElementTreeExtensions.h; sourceTree = "<group>"; };
+		AB8198F11597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement_ElementTreeExtensions.m; sourceTree = "<group>"; };
+		AB8198F21597990600ACFDD6 /* CXMLElement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLElement.h; sourceTree = "<group>"; };
+		AB8198F31597990600ACFDD6 /* CXMLElement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLElement.m; sourceTree = "<group>"; };
+		AB8198F41597990600ACFDD6 /* CXMLNamespaceNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNamespaceNode.h; sourceTree = "<group>"; };
+		AB8198F51597990600ACFDD6 /* CXMLNamespaceNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNamespaceNode.m; sourceTree = "<group>"; };
+		AB8198F61597990600ACFDD6 /* CXMLNode_PrivateExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_PrivateExtensions.h; sourceTree = "<group>"; };
+		AB8198F71597990600ACFDD6 /* CXMLNode_PrivateExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_PrivateExtensions.m; sourceTree = "<group>"; };
+		AB8198F81597990600ACFDD6 /* CXMLNode_XPathExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_XPathExtensions.h; sourceTree = "<group>"; };
+		AB8198F91597990600ACFDD6 /* CXMLNode_XPathExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_XPathExtensions.m; sourceTree = "<group>"; };
+		AB8198FA1597990600ACFDD6 /* CXMLNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode.h; sourceTree = "<group>"; };
+		AB8198FB1597990600ACFDD6 /* CXMLNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode.m; sourceTree = "<group>"; };
+		AB8198FC1597990600ACFDD6 /* TouchXML.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TouchXML.h; sourceTree = "<group>"; };
+		AB8199121597991100ACFDD6 /* CXMLDocument_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLDocument_CreationExtensions.h; sourceTree = "<group>"; };
+		AB8199131597991100ACFDD6 /* CXMLDocument_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLDocument_CreationExtensions.m; sourceTree = "<group>"; };
+		AB8199141597991100ACFDD6 /* CXMLNode_CreationExtensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXMLNode_CreationExtensions.h; sourceTree = "<group>"; };
+		AB8199151597991100ACFDD6 /* CXMLNode_CreationExtensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXMLNode_CreationExtensions.m; sourceTree = "<group>"; };
+		ABE3541415978A50004C6C3D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABE3545B15978DB1004C6C3D /* TouchXML.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TouchXML.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE3546015978DB1004C6C3D /* TouchXML-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TouchXML-Info.plist"; sourceTree = "<group>"; };
+		ABE3548B159792EE004C6C3D /* TouchXML-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TouchXML-Prefix.pch"; sourceTree = "<group>"; };
+		ABE488F5159A3FA7001928DA /* CTidy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CTidy.h; sourceTree = "<group>"; };
+		ABE488F6159A3FA7001928DA /* CTidy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CTidy.m; sourceTree = "<group>"; };
+		ABE48909159A4011001928DA /* README.markdown */ = {isa = PBXFileReference; lastKnownFileType = text; path = README.markdown; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABE3545815978DB1004C6C3D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABE3540615978A50004C6C3D = {
+			isa = PBXGroup;
+			children = (
+				ABE3541615978A50004C6C3D /* TouchXML */,
+				ABE3541315978A50004C6C3D /* Frameworks */,
+				ABE3541215978A50004C6C3D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABE3541215978A50004C6C3D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABE3545B15978DB1004C6C3D /* TouchXML.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABE3541315978A50004C6C3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE3541415978A50004C6C3D /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABE3541615978A50004C6C3D /* TouchXML */ = {
+			isa = PBXGroup;
+			children = (
+				ABE488F5159A3FA7001928DA /* CTidy.h */,
+				ABE488F6159A3FA7001928DA /* CTidy.m */,
+				AB8199121597991100ACFDD6 /* CXMLDocument_CreationExtensions.h */,
+				AB8199131597991100ACFDD6 /* CXMLDocument_CreationExtensions.m */,
+				AB8199141597991100ACFDD6 /* CXMLNode_CreationExtensions.h */,
+				AB8199151597991100ACFDD6 /* CXMLNode_CreationExtensions.m */,
+				AB8198E81597990600ACFDD6 /* CXHTMLDocument.h */,
+				AB8198E91597990600ACFDD6 /* CXHTMLDocument.m */,
+				AB8198EA1597990600ACFDD6 /* CXMLDocument_PrivateExtensions.h */,
+				AB8198EB1597990600ACFDD6 /* CXMLDocument_PrivateExtensions.m */,
+				AB8198EC1597990600ACFDD6 /* CXMLDocument.h */,
+				AB8198ED1597990600ACFDD6 /* CXMLDocument.m */,
+				AB8198EE1597990600ACFDD6 /* CXMLElement_CreationExtensions.h */,
+				AB8198EF1597990600ACFDD6 /* CXMLElement_CreationExtensions.m */,
+				AB8198F01597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.h */,
+				AB8198F11597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.m */,
+				AB8198F21597990600ACFDD6 /* CXMLElement.h */,
+				AB8198F31597990600ACFDD6 /* CXMLElement.m */,
+				AB8198F41597990600ACFDD6 /* CXMLNamespaceNode.h */,
+				AB8198F51597990600ACFDD6 /* CXMLNamespaceNode.m */,
+				AB8198F61597990600ACFDD6 /* CXMLNode_PrivateExtensions.h */,
+				AB8198F71597990600ACFDD6 /* CXMLNode_PrivateExtensions.m */,
+				AB8198F81597990600ACFDD6 /* CXMLNode_XPathExtensions.h */,
+				AB8198F91597990600ACFDD6 /* CXMLNode_XPathExtensions.m */,
+				AB8198FA1597990600ACFDD6 /* CXMLNode.h */,
+				AB8198FB1597990600ACFDD6 /* CXMLNode.m */,
+				AB8198FC1597990600ACFDD6 /* TouchXML.h */,
+				ABE3545F15978DB1004C6C3D /* Supporting Files */,
+			);
+			path = TouchXML;
+			sourceTree = "<group>";
+		};
+		ABE3545F15978DB1004C6C3D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABE48909159A4011001928DA /* README.markdown */,
+				ABE3546015978DB1004C6C3D /* TouchXML-Info.plist */,
+				ABE3548B159792EE004C6C3D /* TouchXML-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ABE35474159790AD004C6C3D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8198FD1597990600ACFDD6 /* CXHTMLDocument.h in Headers */,
+				AB8198FF1597990600ACFDD6 /* CXMLDocument_PrivateExtensions.h in Headers */,
+				AB8199011597990600ACFDD6 /* CXMLDocument.h in Headers */,
+				AB8199031597990600ACFDD6 /* CXMLElement_CreationExtensions.h in Headers */,
+				AB8199051597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.h in Headers */,
+				AB8199071597990600ACFDD6 /* CXMLElement.h in Headers */,
+				AB8199091597990600ACFDD6 /* CXMLNamespaceNode.h in Headers */,
+				AB81990B1597990600ACFDD6 /* CXMLNode_PrivateExtensions.h in Headers */,
+				AB81990D1597990600ACFDD6 /* CXMLNode_XPathExtensions.h in Headers */,
+				AB81990F1597990600ACFDD6 /* CXMLNode.h in Headers */,
+				AB8199111597990600ACFDD6 /* TouchXML.h in Headers */,
+				AB8199161597991100ACFDD6 /* CXMLDocument_CreationExtensions.h in Headers */,
+				AB8199181597991100ACFDD6 /* CXMLNode_CreationExtensions.h in Headers */,
+				ABE488F7159A3FA7001928DA /* CTidy.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ABE3545A15978DB1004C6C3D /* TouchXML */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE3546515978DB1004C6C3D /* Build configuration list for PBXNativeTarget "TouchXML" */;
+			buildPhases = (
+				ABE3545715978DB1004C6C3D /* Sources */,
+				ABE3545815978DB1004C6C3D /* Frameworks */,
+				ABE3545915978DB1004C6C3D /* Resources */,
+				ABE35474159790AD004C6C3D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TouchXML;
+			productName = TouchXML;
+			productReference = ABE3545B15978DB1004C6C3D /* TouchXML.framework */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABE3540815978A50004C6C3D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = ABE3540B15978A50004C6C3D /* Build configuration list for PBXProject "TouchXML" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABE3540615978A50004C6C3D;
+			productRefGroup = ABE3541215978A50004C6C3D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABE3545A15978DB1004C6C3D /* TouchXML */,
+				ABE488EA159A3977001928DA /* TouchXML Universal Framework */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABE3545915978DB1004C6C3D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABE488EE159A3984001928DA /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "FRAMEWORK_VERSION=A\nINSTALL_DIR=${SRCROOT}/Products/${FRAMEWORK_NAME}.framework\n\n# Working dir will be deleted after the framework creation.\nWORK_DIR=build\nDEVICE_DIR=${WORK_DIR}/Release-iphoneos/${FRAMEWORK_NAME}.framework\nSIMULATOR_DIR=${WORK_DIR}/Release-iphonesimulator/${FRAMEWORK_NAME}.framework\n\n# Building both architectures.\nxcodebuild -configuration \"Release\" -target \"${FRAMEWORK_NAME}\" -sdk iphoneos\nxcodebuild -configuration \"Release\" -target \"${FRAMEWORK_NAME}\" -sdk iphonesimulator\n\nif [ -d \"${INSTALL_DIR}\" ]\nthen\nrm -rf \"${INSTALL_DIR}\"\nfi\n\nmkdir -p \"${INSTALL_DIR}/Versions/${FRAMEWORK_VERSION}\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FRAMEWORK_VERSION}/Resources\"\nmkdir -p \"${INSTALL_DIR}/Versions/${FRAMEWORK_VERSION}/Headers\"\n\nln -s \"${FRAMEWORK_VERSION}\" \"${INSTALL_DIR}/Versions/Current\"\nln -s \"Versions/Current/Headers\" \"${INSTALL_DIR}/Headers\"\nln -s \"Versions/Current/Resources\" \"${INSTALL_DIR}/Resources\"\nln -s \"Versions/Current/${FRAMEWORK_NAME}\" \"${INSTALL_DIR}/${FRAMEWORK_NAME}\"\n\ncp -R \"${DEVICE_DIR}/Headers/\" \"${INSTALL_DIR}/Versions/${FRAMEWORK_VERSION}/Headers/\"\ncp -R \"${DEVICE_DIR}/\" \"${INSTALL_DIR}/Versions/${FRAMEWORK_VERSION}/Resources/\"\n\nrm -r \"${INSTALL_DIR}/Versions/${FRAMEWORK_VERSION}/Resources/Headers\" \"${INSTALL_DIR}/Versions/${FRAMEWORK_VERSION}/Resources/${FRAMEWORK_NAME}\"\n\n# Uses the Lipo Tool to merge both binary files (i386 + armv6/armv7) into one Universal final product.\nlipo -create \"${DEVICE_DIR}/${FRAMEWORK_NAME}\" \"${SIMULATOR_DIR}/${FRAMEWORK_NAME}\" -output \"${INSTALL_DIR}/Versions/${FRAMEWORK_VERSION}/${FRAMEWORK_NAME}\"\n\nrm -r \"${WORK_DIR}\"";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABE3545715978DB1004C6C3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB8198FE1597990600ACFDD6 /* CXHTMLDocument.m in Sources */,
+				AB8199001597990600ACFDD6 /* CXMLDocument_PrivateExtensions.m in Sources */,
+				AB8199021597990600ACFDD6 /* CXMLDocument.m in Sources */,
+				AB8199041597990600ACFDD6 /* CXMLElement_CreationExtensions.m in Sources */,
+				AB8199061597990600ACFDD6 /* CXMLElement_ElementTreeExtensions.m in Sources */,
+				AB8199081597990600ACFDD6 /* CXMLElement.m in Sources */,
+				AB81990A1597990600ACFDD6 /* CXMLNamespaceNode.m in Sources */,
+				AB81990C1597990600ACFDD6 /* CXMLNode_PrivateExtensions.m in Sources */,
+				AB81990E1597990600ACFDD6 /* CXMLNode_XPathExtensions.m in Sources */,
+				AB8199101597990600ACFDD6 /* CXMLNode.m in Sources */,
+				AB8199171597991100ACFDD6 /* CXMLDocument_CreationExtensions.m in Sources */,
+				AB8199191597991100ACFDD6 /* CXMLNode_CreationExtensions.m in Sources */,
+				ABE488F8159A3FA7001928DA /* CTidy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABE3541C15978A50004C6C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				WARNING_LDFLAGS = (
+					"-reexport_library",
+					/usr/lib/libxml2.dylib,
+				);
+			};
+			name = Debug;
+		};
+		ABE3541D15978A50004C6C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SDKROOT)/usr/include/libxml2";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+				WARNING_LDFLAGS = (
+					"-reexport_library",
+					/usr/lib/libxml2.dylib,
+				);
+			};
+			name = Release;
+		};
+		ABE3546615978DB1004C6C3D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchXML/TouchXML-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "TouchXML/TouchXML-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Debug;
+		};
+		ABE3546715978DB1004C6C3D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DEAD_CODE_STRIPPING = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "TouchXML/TouchXML-Prefix.pch";
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				INFOPLIST_FILE = "TouchXML/TouchXML-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = mh_object;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = framework;
+			};
+			name = Release;
+		};
+		ABE488EC159A3977001928DA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_NAME = TouchXML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		ABE488ED159A3977001928DA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_NAME = TouchXML;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABE3540B15978A50004C6C3D /* Build configuration list for PBXProject "TouchXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE3541C15978A50004C6C3D /* Debug */,
+				ABE3541D15978A50004C6C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABE3546515978DB1004C6C3D /* Build configuration list for PBXNativeTarget "TouchXML" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE3546615978DB1004C6C3D /* Debug */,
+				ABE3546715978DB1004C6C3D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABE488EB159A3977001928DA /* Build configuration list for PBXAggregateTarget "TouchXML Universal Framework" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE488EC159A3977001928DA /* Debug */,
+				ABE488ED159A3977001928DA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABE3540815978A50004C6C3D /* Project object */;
+}

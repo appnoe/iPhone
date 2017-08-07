@@ -1,0 +1,1 @@
+Die Dateien explosion.caf, racket.caf und wall.caf basieren auf den Sounds Car Explosion von Mike Koenig, Jump Sound und Ball Bounce. Die Originale stehen unter der Creative-Commons-Lizenz (Attribution 3.0) und Sie können sie über http://soundbible.com/106-Car-Explosion.html, http://soundbible.com/1343-Jump.html bzw. http://soundbible.com/1626-Ball-Bounce.html laden.

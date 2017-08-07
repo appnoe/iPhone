@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB0AE9C115B16BEB00F31570 /* SitesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB0AE9C015B16BEB00F31570 /* SitesViewController.m */; };
+		AB45D66D15B1777A00D8CE6C /* ActivitiesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB45D66C15B1777A00D8CE6C /* ActivitiesViewController.m */; };
+		AB45D67115B189CD00D8CE6C /* DetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB45D67015B189CD00D8CE6C /* DetailsViewController.m */; };
+		AB51C18315A86D580041F569 /* HTTPContentRange.m in Sources */ = {isa = PBXBuildFile; fileRef = AB51C18215A86D580041F569 /* HTTPContentRange.m */; };
+		AB6078401550062900CBC151 /* NSDictionary+HTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = AB60783F1550062900CBC151 /* NSDictionary+HTTPRequest.m */; };
+		AB60784615500B5B00CBC151 /* NSDateFormatter+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB60784515500B5B00CBC151 /* NSDateFormatter+Extensions.m */; };
+		AB723A9F15B2138200DDDFED /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = AB723AA115B2138200DDDFED /* Localizable.strings */; };
+		AB728AAF15A9AC8D007F247B /* NSURLCredentialStorage+Extensions.m in Sources */ = {isa = PBXBuildFile; fileRef = AB728AAE15A9AC8D007F247B /* NSURLCredentialStorage+Extensions.m */; };
+		AB76BE20160F8B57008D28D4 /* MIMEMultipartBody.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76BE1F160F8B57008D28D4 /* MIMEMultipartBody.m */; };
+		AB76BE28160F8D7F008D28D4 /* NSString+URLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76BE27160F8D78008D28D4 /* NSString+URLTools.m */; };
+		AB76BE2F160F9BEA008D28D4 /* PhotoUploadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB76BE2E160F9BEA008D28D4 /* PhotoUploadViewController.m */; };
+		AB9EA00815AB6A90009944EF /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = AB9EA00715AB6A90009944EF /* Reachability.m */; };
+		AB9EA00B15AB700C009944EF /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB9EA00A15AB700C009944EF /* SystemConfiguration.framework */; };
+		ABD352A1154D70E7006DBF2F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD352A0154D70E7006DBF2F /* UIKit.framework */; };
+		ABD352A3154D70E7006DBF2F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD352A2154D70E7006DBF2F /* Foundation.framework */; };
+		ABD352A5154D70E7006DBF2F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD352A4154D70E7006DBF2F /* CoreGraphics.framework */; };
+		ABD352AD154D70E7006DBF2F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD352AC154D70E7006DBF2F /* main.m */; };
+		ABD65F2415B1A85900DF8887 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD65F2315B1A85900DF8887 /* CoreLocation.framework */; };
+		ABD65F2815B1AA0900DF8887 /* Annotation.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD65F2715B1AA0900DF8887 /* Annotation.m */; };
+		ABD65F2A15B1AE7300DF8887 /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD65F2915B1AE7300DF8887 /* AddressBook.framework */; };
+		ABD7E8A0154F286A000A7D58 /* NSManagedObjectContext+Tools.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD7E89F154F286A000A7D58 /* NSManagedObjectContext+Tools.m */; };
+		ABF242C61804785E00B4E95D /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = ABF242C51804785E00B4E95D /* Default-568h@2x.png */; };
+		ABFD326E154D71920023B8AB /* DownloadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD3265154D71920023B8AB /* DownloadViewController.m */; };
+		ABFD3270154D71920023B8AB /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFD3269154D71920023B8AB /* MainStoryboard.storyboard */; };
+		ABFD3271154D71920023B8AB /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD326B154D71920023B8AB /* MapViewController.m */; };
+		ABFD3275154D71B10023B8AB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABFD3274154D71B10023B8AB /* InfoPlist.strings */; };
+		ABFD327F154D720A0023B8AB /* Activity.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD3278154D720A0023B8AB /* Activity.m */; };
+		ABFD3280154D720A0023B8AB /* Contact.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD327A154D720A0023B8AB /* Contact.m */; };
+		ABFD3281154D720A0023B8AB /* Site.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD327C154D720A0023B8AB /* Site.m */; };
+		ABFD3282154D720A0023B8AB /* Team.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD327E154D720A0023B8AB /* Team.m */; };
+		ABFD3284154D72170023B8AB /* SiteSchedule.xcdatamodel in Sources */ = {isa = PBXBuildFile; fileRef = ABFD3283154D72170023B8AB /* SiteSchedule.xcdatamodel */; };
+		ABFD3287154D72300023B8AB /* SiteScheduleAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD3286154D72300023B8AB /* SiteScheduleAppDelegate.m */; };
+		ABFD328A154D72640023B8AB /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFD3288154D72640023B8AB /* CoreData.framework */; };
+		ABFD328B154D72640023B8AB /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABFD3289154D72640023B8AB /* MapKit.framework */; };
+		ABFD328E154D72C80023B8AB /* SiteScheduleParser.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD328D154D72C80023B8AB /* SiteScheduleParser.m */; };
+		ABFD3297154D972C0023B8AB /* schedule.xml in Resources */ = {isa = PBXBuildFile; fileRef = ABFD3296154D972C0023B8AB /* schedule.xml */; };
+		ABFD329A154D9A330023B8AB /* UIViewController+SiteSchedule.m in Sources */ = {isa = PBXBuildFile; fileRef = ABFD3299154D9A320023B8AB /* UIViewController+SiteSchedule.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AB0AE9BF15B16BEB00F31570 /* SitesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SitesViewController.h; sourceTree = "<group>"; };
+		AB0AE9C015B16BEB00F31570 /* SitesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SitesViewController.m; sourceTree = "<group>"; };
+		AB45D66B15B1777A00D8CE6C /* ActivitiesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ActivitiesViewController.h; sourceTree = "<group>"; };
+		AB45D66C15B1777A00D8CE6C /* ActivitiesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ActivitiesViewController.m; sourceTree = "<group>"; };
+		AB45D66F15B189CD00D8CE6C /* DetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DetailsViewController.h; sourceTree = "<group>"; };
+		AB45D67015B189CD00D8CE6C /* DetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DetailsViewController.m; sourceTree = "<group>"; };
+		AB51C18115A86D580041F569 /* HTTPContentRange.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HTTPContentRange.h; sourceTree = "<group>"; };
+		AB51C18215A86D580041F569 /* HTTPContentRange.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HTTPContentRange.m; sourceTree = "<group>"; };
+		AB60783E1550062900CBC151 /* NSDictionary+HTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+HTTPRequest.h"; sourceTree = "<group>"; };
+		AB60783F1550062900CBC151 /* NSDictionary+HTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+HTTPRequest.m"; sourceTree = "<group>"; };
+		AB60784415500B5B00CBC151 /* NSDateFormatter+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+Extensions.h"; sourceTree = "<group>"; };
+		AB60784515500B5B00CBC151 /* NSDateFormatter+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+Extensions.m"; sourceTree = "<group>"; };
+		AB723AA015B2138200DDDFED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB723AA315B2138C00DDDFED /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		AB728AAD15A9AC8D007F247B /* NSURLCredentialStorage+Extensions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLCredentialStorage+Extensions.h"; sourceTree = "<group>"; };
+		AB728AAE15A9AC8D007F247B /* NSURLCredentialStorage+Extensions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLCredentialStorage+Extensions.m"; sourceTree = "<group>"; };
+		AB76BE1E160F8B57008D28D4 /* MIMEMultipartBody.h */ = {isa = PBXFileReference; explicitFileType = sourcecode.c.h; fileEncoding = 4; path = MIMEMultipartBody.h; sourceTree = "<group>"; };
+		AB76BE1F160F8B57008D28D4 /* MIMEMultipartBody.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIMEMultipartBody.m; sourceTree = "<group>"; };
+		AB76BE26160F8D78008D28D4 /* NSString+URLTools.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+URLTools.h"; sourceTree = "<group>"; };
+		AB76BE27160F8D78008D28D4 /* NSString+URLTools.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLTools.m"; sourceTree = "<group>"; };
+		AB76BE2D160F9BE9008D28D4 /* PhotoUploadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoUploadViewController.h; sourceTree = "<group>"; };
+		AB76BE2E160F9BEA008D28D4 /* PhotoUploadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoUploadViewController.m; sourceTree = "<group>"; };
+		AB9EA00615AB6A90009944EF /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		AB9EA00715AB6A90009944EF /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
+		AB9EA00A15AB700C009944EF /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		ABD3529C154D70E7006DBF2F /* SiteSchedule.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SiteSchedule.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD352A0154D70E7006DBF2F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ABD352A2154D70E7006DBF2F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABD352A4154D70E7006DBF2F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ABD352A8154D70E7006DBF2F /* SiteSchedule-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SiteSchedule-Info.plist"; sourceTree = "<group>"; };
+		ABD352AC154D70E7006DBF2F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABD352AE154D70E7006DBF2F /* SiteSchedule-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SiteSchedule-Prefix.pch"; sourceTree = "<group>"; };
+		ABD65F2315B1A85900DF8887 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		ABD65F2615B1AA0900DF8887 /* Annotation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Annotation.h; sourceTree = "<group>"; };
+		ABD65F2715B1AA0900DF8887 /* Annotation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Annotation.m; sourceTree = "<group>"; };
+		ABD65F2915B1AE7300DF8887 /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		ABD7E89E154F286A000A7D58 /* NSManagedObjectContext+Tools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSManagedObjectContext+Tools.h"; sourceTree = "<group>"; };
+		ABD7E89F154F286A000A7D58 /* NSManagedObjectContext+Tools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSManagedObjectContext+Tools.m"; sourceTree = "<group>"; };
+		ABF242C51804785E00B4E95D /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		ABFD3264154D71920023B8AB /* DownloadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadViewController.h; sourceTree = "<group>"; };
+		ABFD3265154D71920023B8AB /* DownloadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadViewController.m; sourceTree = "<group>"; };
+		ABFD3269154D71920023B8AB /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		ABFD326A154D71920023B8AB /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		ABFD326B154D71920023B8AB /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
+		ABFD3274154D71B10023B8AB /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = InfoPlist.strings; sourceTree = "<group>"; };
+		ABFD3277154D720A0023B8AB /* Activity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Activity.h; sourceTree = "<group>"; };
+		ABFD3278154D720A0023B8AB /* Activity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Activity.m; sourceTree = "<group>"; };
+		ABFD3279154D720A0023B8AB /* Contact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contact.h; sourceTree = "<group>"; };
+		ABFD327A154D720A0023B8AB /* Contact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contact.m; sourceTree = "<group>"; };
+		ABFD327B154D720A0023B8AB /* Site.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Site.h; sourceTree = "<group>"; };
+		ABFD327C154D720A0023B8AB /* Site.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Site.m; sourceTree = "<group>"; };
+		ABFD327D154D720A0023B8AB /* Team.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Team.h; sourceTree = "<group>"; };
+		ABFD327E154D720A0023B8AB /* Team.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Team.m; sourceTree = "<group>"; };
+		ABFD3283154D72170023B8AB /* SiteSchedule.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SiteSchedule.xcdatamodel; sourceTree = "<group>"; };
+		ABFD3285154D72300023B8AB /* SiteScheduleAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteScheduleAppDelegate.h; sourceTree = "<group>"; };
+		ABFD3286154D72300023B8AB /* SiteScheduleAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteScheduleAppDelegate.m; sourceTree = "<group>"; };
+		ABFD3288154D72640023B8AB /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		ABFD3289154D72640023B8AB /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		ABFD328C154D72C80023B8AB /* SiteScheduleParser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SiteScheduleParser.h; sourceTree = "<group>"; };
+		ABFD328D154D72C80023B8AB /* SiteScheduleParser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SiteScheduleParser.m; sourceTree = "<group>"; };
+		ABFD328F154D732A0023B8AB /* Model.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Model.h; sourceTree = "<group>"; };
+		ABFD3290154D85400023B8AB /* schedule.dtd */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schedule.dtd; sourceTree = "<group>"; };
+		ABFD3296154D972C0023B8AB /* schedule.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = schedule.xml; sourceTree = "<group>"; };
+		ABFD3298154D9A320023B8AB /* UIViewController+SiteSchedule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SiteSchedule.h"; sourceTree = "<group>"; };
+		ABFD3299154D9A320023B8AB /* UIViewController+SiteSchedule.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SiteSchedule.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABD35299154D70E7006DBF2F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD65F2A15B1AE7300DF8887 /* AddressBook.framework in Frameworks */,
+				ABD65F2415B1A85900DF8887 /* CoreLocation.framework in Frameworks */,
+				AB9EA00B15AB700C009944EF /* SystemConfiguration.framework in Frameworks */,
+				ABFD328A154D72640023B8AB /* CoreData.framework in Frameworks */,
+				ABFD328B154D72640023B8AB /* MapKit.framework in Frameworks */,
+				ABD352A1154D70E7006DBF2F /* UIKit.framework in Frameworks */,
+				ABD352A3154D70E7006DBF2F /* Foundation.framework in Frameworks */,
+				ABD352A5154D70E7006DBF2F /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB60783C155005E700CBC151 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				AB76BE26160F8D78008D28D4 /* NSString+URLTools.h */,
+				AB76BE27160F8D78008D28D4 /* NSString+URLTools.m */,
+				AB60783E1550062900CBC151 /* NSDictionary+HTTPRequest.h */,
+				AB60783F1550062900CBC151 /* NSDictionary+HTTPRequest.m */,
+				AB76BE1E160F8B57008D28D4 /* MIMEMultipartBody.h */,
+				AB76BE1F160F8B57008D28D4 /* MIMEMultipartBody.m */,
+				AB9EA00615AB6A90009944EF /* Reachability.h */,
+				AB9EA00715AB6A90009944EF /* Reachability.m */,
+				AB60784415500B5B00CBC151 /* NSDateFormatter+Extensions.h */,
+				AB60784515500B5B00CBC151 /* NSDateFormatter+Extensions.m */,
+				AB51C18115A86D580041F569 /* HTTPContentRange.h */,
+				AB51C18215A86D580041F569 /* HTTPContentRange.m */,
+				AB728AAD15A9AC8D007F247B /* NSURLCredentialStorage+Extensions.h */,
+				AB728AAE15A9AC8D007F247B /* NSURLCredentialStorage+Extensions.m */,
+			);
+			name = Extensions;
+			sourceTree = "<group>";
+		};
+		ABD35291154D70E6006DBF2F = {
+			isa = PBXGroup;
+			children = (
+				ABF242C51804785E00B4E95D /* Default-568h@2x.png */,
+				ABD352A6154D70E7006DBF2F /* SiteSchedule */,
+				ABD3529F154D70E7006DBF2F /* Frameworks */,
+				ABD3529D154D70E7006DBF2F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABD3529D154D70E7006DBF2F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD3529C154D70E7006DBF2F /* SiteSchedule.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABD3529F154D70E7006DBF2F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABD65F2915B1AE7300DF8887 /* AddressBook.framework */,
+				ABD65F2315B1A85900DF8887 /* CoreLocation.framework */,
+				AB9EA00A15AB700C009944EF /* SystemConfiguration.framework */,
+				ABFD3288154D72640023B8AB /* CoreData.framework */,
+				ABFD3289154D72640023B8AB /* MapKit.framework */,
+				ABD352A0154D70E7006DBF2F /* UIKit.framework */,
+				ABD352A2154D70E7006DBF2F /* Foundation.framework */,
+				ABD352A4154D70E7006DBF2F /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABD352A6154D70E7006DBF2F /* SiteSchedule */ = {
+			isa = PBXGroup;
+			children = (
+				AB60783C155005E700CBC151 /* Extensions */,
+				ABD7E89D154F283E000A7D58 /* View Controller */,
+				ABD7E89B154F2822000A7D58 /* Controller */,
+				ABFD3276154D71E90023B8AB /* Model */,
+				ABD352A7154D70E7006DBF2F /* Supporting Files */,
+			);
+			path = SiteSchedule;
+			sourceTree = "<group>";
+		};
+		ABD352A7154D70E7006DBF2F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABFD3290154D85400023B8AB /* schedule.dtd */,
+				ABFD3274154D71B10023B8AB /* InfoPlist.strings */,
+				ABD352A8154D70E7006DBF2F /* SiteSchedule-Info.plist */,
+				ABD352AC154D70E7006DBF2F /* main.m */,
+				ABD352AE154D70E7006DBF2F /* SiteSchedule-Prefix.pch */,
+				ABFD3296154D972C0023B8AB /* schedule.xml */,
+				AB723AA115B2138200DDDFED /* Localizable.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABD7E89B154F2822000A7D58 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABFD328C154D72C80023B8AB /* SiteScheduleParser.h */,
+				ABFD328D154D72C80023B8AB /* SiteScheduleParser.m */,
+				ABFD3285154D72300023B8AB /* SiteScheduleAppDelegate.h */,
+				ABFD3286154D72300023B8AB /* SiteScheduleAppDelegate.m */,
+				ABD7E89E154F286A000A7D58 /* NSManagedObjectContext+Tools.h */,
+				ABD7E89F154F286A000A7D58 /* NSManagedObjectContext+Tools.m */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		ABD7E89D154F283E000A7D58 /* View Controller */ = {
+			isa = PBXGroup;
+			children = (
+				ABFD3264154D71920023B8AB /* DownloadViewController.h */,
+				ABFD3265154D71920023B8AB /* DownloadViewController.m */,
+				ABFD326A154D71920023B8AB /* MapViewController.h */,
+				ABFD326B154D71920023B8AB /* MapViewController.m */,
+				ABFD3298154D9A320023B8AB /* UIViewController+SiteSchedule.h */,
+				ABFD3299154D9A320023B8AB /* UIViewController+SiteSchedule.m */,
+				AB0AE9BF15B16BEB00F31570 /* SitesViewController.h */,
+				AB0AE9C015B16BEB00F31570 /* SitesViewController.m */,
+				AB45D66B15B1777A00D8CE6C /* ActivitiesViewController.h */,
+				AB45D66C15B1777A00D8CE6C /* ActivitiesViewController.m */,
+				AB45D66F15B189CD00D8CE6C /* DetailsViewController.h */,
+				AB45D67015B189CD00D8CE6C /* DetailsViewController.m */,
+				ABFD3269154D71920023B8AB /* MainStoryboard.storyboard */,
+				ABD65F2615B1AA0900DF8887 /* Annotation.h */,
+				ABD65F2715B1AA0900DF8887 /* Annotation.m */,
+				AB76BE2D160F9BE9008D28D4 /* PhotoUploadViewController.h */,
+				AB76BE2E160F9BEA008D28D4 /* PhotoUploadViewController.m */,
+			);
+			name = "View Controller";
+			sourceTree = "<group>";
+		};
+		ABFD3276154D71E90023B8AB /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				ABFD3283154D72170023B8AB /* SiteSchedule.xcdatamodel */,
+				ABFD3277154D720A0023B8AB /* Activity.h */,
+				ABFD3278154D720A0023B8AB /* Activity.m */,
+				ABFD3279154D720A0023B8AB /* Contact.h */,
+				ABFD327A154D720A0023B8AB /* Contact.m */,
+				ABFD327B154D720A0023B8AB /* Site.h */,
+				ABFD327C154D720A0023B8AB /* Site.m */,
+				ABFD327D154D720A0023B8AB /* Team.h */,
+				ABFD327E154D720A0023B8AB /* Team.m */,
+				ABFD328F154D732A0023B8AB /* Model.h */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABD3529B154D70E7006DBF2F /* SiteSchedule */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD352BA154D70E7006DBF2F /* Build configuration list for PBXNativeTarget "SiteSchedule" */;
+			buildPhases = (
+				ABD35298154D70E7006DBF2F /* Sources */,
+				ABD35299154D70E7006DBF2F /* Frameworks */,
+				ABD3529A154D70E7006DBF2F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SiteSchedule;
+			productName = SiteSchedule;
+			productReference = ABD3529C154D70E7006DBF2F /* SiteSchedule.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABD35293154D70E6006DBF2F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Schedule;
+				LastUpgradeCheck = 0430;
+			};
+			buildConfigurationList = ABD35296154D70E6006DBF2F /* Build configuration list for PBXProject "SiteSchedule" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				de,
+			);
+			mainGroup = ABD35291154D70E6006DBF2F;
+			productRefGroup = ABD3529D154D70E7006DBF2F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABD3529B154D70E7006DBF2F /* SiteSchedule */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABD3529A154D70E7006DBF2F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABFD3270154D71920023B8AB /* MainStoryboard.storyboard in Resources */,
+				ABFD3275154D71B10023B8AB /* InfoPlist.strings in Resources */,
+				ABFD3297154D972C0023B8AB /* schedule.xml in Resources */,
+				ABF242C61804785E00B4E95D /* Default-568h@2x.png in Resources */,
+				AB723A9F15B2138200DDDFED /* Localizable.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABD35298154D70E7006DBF2F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD352AD154D70E7006DBF2F /* main.m in Sources */,
+				ABFD326E154D71920023B8AB /* DownloadViewController.m in Sources */,
+				ABFD3271154D71920023B8AB /* MapViewController.m in Sources */,
+				ABFD327F154D720A0023B8AB /* Activity.m in Sources */,
+				ABFD3280154D720A0023B8AB /* Contact.m in Sources */,
+				ABFD3281154D720A0023B8AB /* Site.m in Sources */,
+				ABFD3282154D720A0023B8AB /* Team.m in Sources */,
+				ABFD3284154D72170023B8AB /* SiteSchedule.xcdatamodel in Sources */,
+				ABFD3287154D72300023B8AB /* SiteScheduleAppDelegate.m in Sources */,
+				ABFD328E154D72C80023B8AB /* SiteScheduleParser.m in Sources */,
+				ABFD329A154D9A330023B8AB /* UIViewController+SiteSchedule.m in Sources */,
+				ABD7E8A0154F286A000A7D58 /* NSManagedObjectContext+Tools.m in Sources */,
+				AB6078401550062900CBC151 /* NSDictionary+HTTPRequest.m in Sources */,
+				AB60784615500B5B00CBC151 /* NSDateFormatter+Extensions.m in Sources */,
+				AB51C18315A86D580041F569 /* HTTPContentRange.m in Sources */,
+				AB728AAF15A9AC8D007F247B /* NSURLCredentialStorage+Extensions.m in Sources */,
+				AB9EA00815AB6A90009944EF /* Reachability.m in Sources */,
+				AB0AE9C115B16BEB00F31570 /* SitesViewController.m in Sources */,
+				AB45D66D15B1777A00D8CE6C /* ActivitiesViewController.m in Sources */,
+				AB45D67115B189CD00D8CE6C /* DetailsViewController.m in Sources */,
+				ABD65F2815B1AA0900DF8887 /* Annotation.m in Sources */,
+				AB76BE20160F8B57008D28D4 /* MIMEMultipartBody.m in Sources */,
+				AB76BE28160F8D7F008D28D4 /* NSString+URLTools.m in Sources */,
+				AB76BE2F160F9BEA008D28D4 /* PhotoUploadViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AB723AA115B2138200DDDFED /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB723AA015B2138200DDDFED /* en */,
+				AB723AA315B2138C00DDDFED /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABD352B8154D70E7006DBF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABD352B9154D70E7006DBF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABD352BB154D70E7006DBF2F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SiteSchedule/SiteSchedule-Prefix.pch";
+				INFOPLIST_FILE = "SiteSchedule/SiteSchedule-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ABD352BC154D70E7006DBF2F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SiteSchedule/SiteSchedule-Prefix.pch";
+				INFOPLIST_FILE = "SiteSchedule/SiteSchedule-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABD35296154D70E6006DBF2F /* Build configuration list for PBXProject "SiteSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD352B8154D70E7006DBF2F /* Debug */,
+				ABD352B9154D70E7006DBF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD352BA154D70E7006DBF2F /* Build configuration list for PBXNativeTarget "SiteSchedule" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD352BB154D70E7006DBF2F /* Debug */,
+				ABD352BC154D70E7006DBF2F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABD35293154D70E6006DBF2F /* Project object */;
+}

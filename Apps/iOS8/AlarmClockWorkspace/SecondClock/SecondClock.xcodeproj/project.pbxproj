@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB710DB219A8CE6F00BD52EC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB710DB019A8CE6F00BD52EC /* Main.storyboard */; };
+		AB710DC019A8CE6F00BD52EC /* OrangeClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB710DBF19A8CE6F00BD52EC /* OrangeClockTests.m */; };
+		AB710DC819A8CF2700BD52EC /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB710DC719A8CF2700BD52EC /* Images.xcassets */; };
+		AB710DC919A8CFA100BD52EC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B924819A3B84B00AC0E5B /* AppDelegate.m */; };
+		AB710DCA19A8CFA100BD52EC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B924B19A3B84B00AC0E5B /* ViewController.m */; };
+		AB710DCB19A8CFA100BD52EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B924519A3B84B00AC0E5B /* main.m */; };
+		AB710DCC19A8CFA100BD52EC /* NSBundle+DynamicLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B92A519A50D6D00AC0E5B /* NSBundle+DynamicLoading.m */; };
+		AB710DD119A8D27200BD52EC /* AlarmClockFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7B927019A3C26700AC0E5B /* AlarmClockFramework.framework */; };
+		AB710DD219A8D27200BD52EC /* AlarmClockFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB7B927019A3C26700AC0E5B /* AlarmClockFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB7B924619A3B84B00AC0E5B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B924519A3B84B00AC0E5B /* main.m */; };
+		AB7B924919A3B84B00AC0E5B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B924819A3B84B00AC0E5B /* AppDelegate.m */; };
+		AB7B924C19A3B84B00AC0E5B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B924B19A3B84B00AC0E5B /* ViewController.m */; };
+		AB7B924F19A3B84B00AC0E5B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB7B924D19A3B84B00AC0E5B /* Main.storyboard */; };
+		AB7B925119A3B84B00AC0E5B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB7B925019A3B84B00AC0E5B /* Images.xcassets */; };
+		AB7B925D19A3B84C00AC0E5B /* SecondClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B925C19A3B84C00AC0E5B /* SecondClockTests.m */; };
+		AB7B927319A3D23200AC0E5B /* AlarmClockFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AB7B927019A3C26700AC0E5B /* AlarmClockFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AB7B929F19A3E09400AC0E5B /* Figure.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB7B929E19A3E09400AC0E5B /* Figure.framework */; };
+		AB7B92A619A50D6D00AC0E5B /* NSBundle+DynamicLoading.m in Sources */ = {isa = PBXBuildFile; fileRef = AB7B92A519A50D6D00AC0E5B /* NSBundle+DynamicLoading.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB710DBA19A8CE6F00BD52EC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7B923819A3B84B00AC0E5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB710DA319A8CE6F00BD52EC;
+			remoteInfo = OrangeClock;
+		};
+		AB7B925719A3B84C00AC0E5B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB7B923819A3B84B00AC0E5B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB7B923F19A3B84B00AC0E5B;
+			remoteInfo = SecondClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AB710DD319A8D27200BD52EC /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB710DD219A8D27200BD52EC /* AlarmClockFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7B927419A3D23200AC0E5B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				AB7B927319A3D23200AC0E5B /* AlarmClockFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		AB710D9F19A8C70300BD52EC /* Figure.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = Figure.xcconfig; path = ../Figure.xcconfig; sourceTree = "<group>"; };
+		AB710DA419A8CE6F00BD52EC /* OrangeClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = OrangeClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB710DA719A8CE6F00BD52EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB710DB119A8CE6F00BD52EC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB710DB919A8CE6F00BD52EC /* OrangeClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB710DBE19A8CE6F00BD52EC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB710DBF19A8CE6F00BD52EC /* OrangeClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrangeClockTests.m; sourceTree = "<group>"; };
+		AB710DC719A8CF2700BD52EC /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB7B924019A3B84B00AC0E5B /* SecondClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7B924419A3B84B00AC0E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7B924519A3B84B00AC0E5B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB7B924719A3B84B00AC0E5B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB7B924819A3B84B00AC0E5B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB7B924A19A3B84B00AC0E5B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB7B924B19A3B84B00AC0E5B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB7B924E19A3B84B00AC0E5B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB7B925019A3B84B00AC0E5B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AB7B925619A3B84B00AC0E5B /* SecondClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7B925B19A3B84C00AC0E5B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB7B925C19A3B84C00AC0E5B /* SecondClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondClockTests.m; sourceTree = "<group>"; };
+		AB7B927019A3C26700AC0E5B /* AlarmClockFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = AlarmClockFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB7B929E19A3E09400AC0E5B /* Figure.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Figure.framework; path = "../Figure/build/Debug-iphoneos/Figure.framework"; sourceTree = "<group>"; };
+		AB7B92A419A50D6D00AC0E5B /* NSBundle+DynamicLoading.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+DynamicLoading.h"; sourceTree = "<group>"; };
+		AB7B92A519A50D6D00AC0E5B /* NSBundle+DynamicLoading.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+DynamicLoading.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB710DA119A8CE6F00BD52EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB710DD119A8D27200BD52EC /* AlarmClockFramework.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB710DB619A8CE6F00BD52EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7B923D19A3B84B00AC0E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7B929F19A3E09400AC0E5B /* Figure.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7B925319A3B84B00AC0E5B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB710DA519A8CE6F00BD52EC /* OrangeClock */ = {
+			isa = PBXGroup;
+			children = (
+				AB710DB019A8CE6F00BD52EC /* Main.storyboard */,
+				AB710DC719A8CF2700BD52EC /* Images.xcassets */,
+				AB710DA619A8CE6F00BD52EC /* Supporting Files */,
+			);
+			path = OrangeClock;
+			sourceTree = "<group>";
+		};
+		AB710DA619A8CE6F00BD52EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB710DA719A8CE6F00BD52EC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB710DBC19A8CE6F00BD52EC /* OrangeClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB710DBF19A8CE6F00BD52EC /* OrangeClockTests.m */,
+				AB710DBD19A8CE6F00BD52EC /* Supporting Files */,
+			);
+			path = OrangeClockTests;
+			sourceTree = "<group>";
+		};
+		AB710DBD19A8CE6F00BD52EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB710DBE19A8CE6F00BD52EC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB7B923719A3B84B00AC0E5B = {
+			isa = PBXGroup;
+			children = (
+				AB710D9F19A8C70300BD52EC /* Figure.xcconfig */,
+				AB7B929E19A3E09400AC0E5B /* Figure.framework */,
+				AB7B927019A3C26700AC0E5B /* AlarmClockFramework.framework */,
+				AB7B924219A3B84B00AC0E5B /* SecondClock */,
+				AB7B925919A3B84C00AC0E5B /* SecondClockTests */,
+				AB710DA519A8CE6F00BD52EC /* OrangeClock */,
+				AB710DBC19A8CE6F00BD52EC /* OrangeClockTests */,
+				AB7B924119A3B84B00AC0E5B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB7B924119A3B84B00AC0E5B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B924019A3B84B00AC0E5B /* SecondClock.app */,
+				AB7B925619A3B84B00AC0E5B /* SecondClockTests.xctest */,
+				AB710DA419A8CE6F00BD52EC /* OrangeClock.app */,
+				AB710DB919A8CE6F00BD52EC /* OrangeClockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB7B924219A3B84B00AC0E5B /* SecondClock */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B924719A3B84B00AC0E5B /* AppDelegate.h */,
+				AB7B924819A3B84B00AC0E5B /* AppDelegate.m */,
+				AB7B924A19A3B84B00AC0E5B /* ViewController.h */,
+				AB7B924B19A3B84B00AC0E5B /* ViewController.m */,
+				AB7B924D19A3B84B00AC0E5B /* Main.storyboard */,
+				AB7B925019A3B84B00AC0E5B /* Images.xcassets */,
+				AB7B924319A3B84B00AC0E5B /* Supporting Files */,
+				AB7B92A419A50D6D00AC0E5B /* NSBundle+DynamicLoading.h */,
+				AB7B92A519A50D6D00AC0E5B /* NSBundle+DynamicLoading.m */,
+			);
+			path = SecondClock;
+			sourceTree = "<group>";
+		};
+		AB7B924319A3B84B00AC0E5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B924419A3B84B00AC0E5B /* Info.plist */,
+				AB7B924519A3B84B00AC0E5B /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB7B925919A3B84C00AC0E5B /* SecondClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B925C19A3B84C00AC0E5B /* SecondClockTests.m */,
+				AB7B925A19A3B84C00AC0E5B /* Supporting Files */,
+			);
+			path = SecondClockTests;
+			sourceTree = "<group>";
+		};
+		AB7B925A19A3B84C00AC0E5B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB7B925B19A3B84C00AC0E5B /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB710DA319A8CE6F00BD52EC /* OrangeClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB710DC119A8CE6F00BD52EC /* Build configuration list for PBXNativeTarget "OrangeClock" */;
+			buildPhases = (
+				AB710DA019A8CE6F00BD52EC /* Sources */,
+				AB710DA119A8CE6F00BD52EC /* Frameworks */,
+				AB710DA219A8CE6F00BD52EC /* Resources */,
+				AB710DD319A8D27200BD52EC /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrangeClock;
+			productName = OrangeClock;
+			productReference = AB710DA419A8CE6F00BD52EC /* OrangeClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB710DB819A8CE6F00BD52EC /* OrangeClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB710DC419A8CE6F00BD52EC /* Build configuration list for PBXNativeTarget "OrangeClockTests" */;
+			buildPhases = (
+				AB710DB519A8CE6F00BD52EC /* Sources */,
+				AB710DB619A8CE6F00BD52EC /* Frameworks */,
+				AB710DB719A8CE6F00BD52EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB710DBB19A8CE6F00BD52EC /* PBXTargetDependency */,
+			);
+			name = OrangeClockTests;
+			productName = OrangeClockTests;
+			productReference = AB710DB919A8CE6F00BD52EC /* OrangeClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB7B923F19A3B84B00AC0E5B /* SecondClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7B926019A3B84C00AC0E5B /* Build configuration list for PBXNativeTarget "SecondClock" */;
+			buildPhases = (
+				AB7B923C19A3B84B00AC0E5B /* Sources */,
+				AB7B923D19A3B84B00AC0E5B /* Frameworks */,
+				AB7B923E19A3B84B00AC0E5B /* Resources */,
+				AB7B927419A3D23200AC0E5B /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecondClock;
+			productName = SecondClock;
+			productReference = AB7B924019A3B84B00AC0E5B /* SecondClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB7B925519A3B84B00AC0E5B /* SecondClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB7B926319A3B84C00AC0E5B /* Build configuration list for PBXNativeTarget "SecondClockTests" */;
+			buildPhases = (
+				AB7B925219A3B84B00AC0E5B /* Sources */,
+				AB7B925319A3B84B00AC0E5B /* Frameworks */,
+				AB7B925419A3B84B00AC0E5B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB7B925819A3B84C00AC0E5B /* PBXTargetDependency */,
+			);
+			name = SecondClockTests;
+			productName = SecondClockTests;
+			productReference = AB7B925619A3B84B00AC0E5B /* SecondClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB7B923819A3B84B00AC0E5B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0600;
+				ORGANIZATIONNAME = "Clemens Wagner";
+				TargetAttributes = {
+					AB710DA319A8CE6F00BD52EC = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					AB710DB819A8CE6F00BD52EC = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = AB710DA319A8CE6F00BD52EC;
+					};
+					AB7B923F19A3B84B00AC0E5B = {
+						CreatedOnToolsVersion = 6.0;
+					};
+					AB7B925519A3B84B00AC0E5B = {
+						CreatedOnToolsVersion = 6.0;
+						TestTargetID = AB7B923F19A3B84B00AC0E5B;
+					};
+				};
+			};
+			buildConfigurationList = AB7B923B19A3B84B00AC0E5B /* Build configuration list for PBXProject "SecondClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB7B923719A3B84B00AC0E5B;
+			productRefGroup = AB7B924119A3B84B00AC0E5B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB7B923F19A3B84B00AC0E5B /* SecondClock */,
+				AB7B925519A3B84B00AC0E5B /* SecondClockTests */,
+				AB710DA319A8CE6F00BD52EC /* OrangeClock */,
+				AB710DB819A8CE6F00BD52EC /* OrangeClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB710DA219A8CE6F00BD52EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB710DB219A8CE6F00BD52EC /* Main.storyboard in Resources */,
+				AB710DC819A8CF2700BD52EC /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB710DB719A8CE6F00BD52EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7B923E19A3B84B00AC0E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7B924F19A3B84B00AC0E5B /* Main.storyboard in Resources */,
+				AB7B925119A3B84B00AC0E5B /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7B925419A3B84B00AC0E5B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB710DA019A8CE6F00BD52EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB710DCA19A8CFA100BD52EC /* ViewController.m in Sources */,
+				AB710DCC19A8CFA100BD52EC /* NSBundle+DynamicLoading.m in Sources */,
+				AB710DCB19A8CFA100BD52EC /* main.m in Sources */,
+				AB710DC919A8CFA100BD52EC /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB710DB519A8CE6F00BD52EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB710DC019A8CE6F00BD52EC /* OrangeClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7B923C19A3B84B00AC0E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7B924C19A3B84B00AC0E5B /* ViewController.m in Sources */,
+				AB7B92A619A50D6D00AC0E5B /* NSBundle+DynamicLoading.m in Sources */,
+				AB7B924919A3B84B00AC0E5B /* AppDelegate.m in Sources */,
+				AB7B924619A3B84B00AC0E5B /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7B925219A3B84B00AC0E5B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB7B925D19A3B84C00AC0E5B /* SecondClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB710DBB19A8CE6F00BD52EC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB710DA319A8CE6F00BD52EC /* OrangeClock */;
+			targetProxy = AB710DBA19A8CE6F00BD52EC /* PBXContainerItemProxy */;
+		};
+		AB7B925819A3B84C00AC0E5B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB7B923F19A3B84B00AC0E5B /* SecondClock */;
+			targetProxy = AB7B925719A3B84C00AC0E5B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB710DB019A8CE6F00BD52EC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB710DB119A8CE6F00BD52EC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB7B924D19A3B84B00AC0E5B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB7B924E19A3B84B00AC0E5B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB710DC219A8CE6F00BD52EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ORANGE_CLOCK=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OrangeClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB710DC319A8CE6F00BD52EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ORANGE_CLOCK=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OrangeClock/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AB710DC519A8CE6F00BD52EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OrangeClockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrangeClock.app/OrangeClock";
+			};
+			name = Debug;
+		};
+		AB710DC619A8CE6F00BD52EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = OrangeClockTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/OrangeClock.app/OrangeClock";
+			};
+			name = Release;
+		};
+		AB7B925E19A3B84C00AC0E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB710D9F19A8C70300BD52EC /* Figure.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		AB7B925F19A3B84C00AC0E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB710D9F19A8C70300BD52EC /* Figure.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB7B926119A3B84C00AC0E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AlarmClockWorkspace-buytgithpskbxcegjqorzxwpvedh/Build/Products/Debug-iphoneos",
+					"/Users/clemens/git/Cocoaneheads/iPhone/Apps/iOS8/AlarmClockWorkspace/Figure/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SecondClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB7B926219A3B84C00AC0E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(USER_LIBRARY_DIR)/Developer/Xcode/DerivedData/AlarmClockWorkspace-buytgithpskbxcegjqorzxwpvedh/Build/Products/Debug-iphoneos",
+					"/Users/clemens/git/Cocoaneheads/iPhone/Apps/iOS8/AlarmClockWorkspace/Figure/build/Debug-iphoneos",
+				);
+				INFOPLIST_FILE = SecondClock/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AB7B926419A3B84C00AC0E5B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SecondClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecondClock.app/SecondClock";
+			};
+			name = Debug;
+		};
+		AB7B926519A3B84C00AC0E5B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SecondClockTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SecondClock.app/SecondClock";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB710DC119A8CE6F00BD52EC /* Build configuration list for PBXNativeTarget "OrangeClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB710DC219A8CE6F00BD52EC /* Debug */,
+				AB710DC319A8CE6F00BD52EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB710DC419A8CE6F00BD52EC /* Build configuration list for PBXNativeTarget "OrangeClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB710DC519A8CE6F00BD52EC /* Debug */,
+				AB710DC619A8CE6F00BD52EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB7B923B19A3B84B00AC0E5B /* Build configuration list for PBXProject "SecondClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7B925E19A3B84C00AC0E5B /* Debug */,
+				AB7B925F19A3B84C00AC0E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7B926019A3B84C00AC0E5B /* Build configuration list for PBXNativeTarget "SecondClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7B926119A3B84C00AC0E5B /* Debug */,
+				AB7B926219A3B84C00AC0E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB7B926319A3B84C00AC0E5B /* Build configuration list for PBXNativeTarget "SecondClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB7B926419A3B84C00AC0E5B /* Debug */,
+				AB7B926519A3B84C00AC0E5B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AB7B923819A3B84B00AC0E5B /* Project object */;
+}

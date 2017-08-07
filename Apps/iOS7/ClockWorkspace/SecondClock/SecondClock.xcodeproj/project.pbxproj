@@ -1,0 +1,778 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABE9920917DB26F200252A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEE817DA7711004D6AA8 /* Foundation.framework */; };
+		ABE9920A17DB26F200252A36 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEEA17DA7711004D6AA8 /* CoreGraphics.framework */; };
+		ABE9920B17DB26F200252A36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEEC17DA7711004D6AA8 /* UIKit.framework */; };
+		ABE9921117DB26F200252A36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABE9920F17DB26F200252A36 /* InfoPlist.strings */; };
+		ABE9921F17DB26F200252A36 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABE9921E17DB26F200252A36 /* Images.xcassets */; };
+		ABE9922517DB26F200252A36 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FF0717DA7711004D6AA8 /* XCTest.framework */; };
+		ABE9922617DB26F200252A36 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEE817DA7711004D6AA8 /* Foundation.framework */; };
+		ABE9922717DB26F200252A36 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEEC17DA7711004D6AA8 /* UIKit.framework */; };
+		ABE9922F17DB26F200252A36 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABE9922D17DB26F200252A36 /* InfoPlist.strings */; };
+		ABE9923117DB26F200252A36 /* OrangeClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABE9923017DB26F200252A36 /* OrangeClockTests.m */; };
+		ABE9923817DB2A0300252A36 /* SecondClockAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF8FEF817DA7711004D6AA8 /* SecondClockAppDelegate.m */; };
+		ABE9923917DB2A0300252A36 /* SecondClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF8FEFE17DA7711004D6AA8 /* SecondClockViewController.m */; };
+		ABE9923A17DB2A0300252A36 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF8FEF417DA7711004D6AA8 /* main.m */; };
+		ABE9923D17DB302800252A36 /* libClockLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE9923C17DB302800252A36 /* libClockLibrary.a */; };
+		ABE9923F17DB37DD00252A36 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABE9923E17DB37DD00252A36 /* QuartzCore.framework */; };
+		ABE9924617DB844600252A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE9924417DB844600252A36 /* Main.storyboard */; };
+		ABE9924917DB84D300252A36 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABE9924717DB84D300252A36 /* Main.storyboard */; };
+		ABF8FEE917DA7711004D6AA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEE817DA7711004D6AA8 /* Foundation.framework */; };
+		ABF8FEEB17DA7711004D6AA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEEA17DA7711004D6AA8 /* CoreGraphics.framework */; };
+		ABF8FEED17DA7711004D6AA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEEC17DA7711004D6AA8 /* UIKit.framework */; };
+		ABF8FEF317DA7711004D6AA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABF8FEF117DA7711004D6AA8 /* InfoPlist.strings */; };
+		ABF8FEF517DA7711004D6AA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF8FEF417DA7711004D6AA8 /* main.m */; };
+		ABF8FEF917DA7711004D6AA8 /* SecondClockAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF8FEF817DA7711004D6AA8 /* SecondClockAppDelegate.m */; };
+		ABF8FEFF17DA7711004D6AA8 /* SecondClockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF8FEFE17DA7711004D6AA8 /* SecondClockViewController.m */; };
+		ABF8FF0117DA7711004D6AA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABF8FF0017DA7711004D6AA8 /* Images.xcassets */; };
+		ABF8FF0817DA7711004D6AA8 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FF0717DA7711004D6AA8 /* XCTest.framework */; };
+		ABF8FF0917DA7711004D6AA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEE817DA7711004D6AA8 /* Foundation.framework */; };
+		ABF8FF0A17DA7711004D6AA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FEEC17DA7711004D6AA8 /* UIKit.framework */; };
+		ABF8FF1217DA7711004D6AA8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = ABF8FF1017DA7711004D6AA8 /* InfoPlist.strings */; };
+		ABF8FF1417DA7711004D6AA8 /* SecondClockTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF8FF1317DA7711004D6AA8 /* SecondClockTests.m */; };
+		ABF8FF2017DA78E8004D6AA8 /* libClockLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ABF8FF1F17DA78E8004D6AA8 /* libClockLibrary.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		ABE9922817DB26F200252A36 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABF8FEDD17DA7711004D6AA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABE9920717DB26F200252A36;
+			remoteInfo = OrangeClock;
+		};
+		ABF8FF0B17DA7711004D6AA8 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ABF8FEDD17DA7711004D6AA8 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ABF8FEE417DA7711004D6AA8;
+			remoteInfo = SecondClock;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		ABE9920817DB26F200252A36 /* .app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = .app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE9920E17DB26F200252A36 /* OrangeClock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrangeClock-Info.plist"; sourceTree = "<group>"; };
+		ABE9921017DB26F200252A36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABE9921E17DB26F200252A36 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABE9922417DB26F200252A36 /* OrangeClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OrangeClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABE9922C17DB26F200252A36 /* OrangeClockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OrangeClockTests-Info.plist"; sourceTree = "<group>"; };
+		ABE9922E17DB26F200252A36 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABE9923017DB26F200252A36 /* OrangeClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OrangeClockTests.m; sourceTree = "<group>"; };
+		ABE9923C17DB302800252A36 /* libClockLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libClockLibrary.a; path = "../ClockLibrary/build/Debug-iphoneos/libClockLibrary.a"; sourceTree = "<group>"; };
+		ABE9923E17DB37DD00252A36 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		ABE9924517DB844600252A36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABE9924817DB84D300252A36 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/Main.storyboard; sourceTree = "<group>"; };
+		ABF8FEE517DA7711004D6AA8 /* SecondClock.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SecondClock.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF8FEE817DA7711004D6AA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABF8FEEA17DA7711004D6AA8 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		ABF8FEEC17DA7711004D6AA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ABF8FEF017DA7711004D6AA8 /* SecondClock-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecondClock-Info.plist"; sourceTree = "<group>"; };
+		ABF8FEF217DA7711004D6AA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABF8FEF417DA7711004D6AA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		ABF8FEF617DA7711004D6AA8 /* SecondClock-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SecondClock-Prefix.pch"; sourceTree = "<group>"; };
+		ABF8FEF717DA7711004D6AA8 /* SecondClockAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondClockAppDelegate.h; sourceTree = "<group>"; };
+		ABF8FEF817DA7711004D6AA8 /* SecondClockAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondClockAppDelegate.m; sourceTree = "<group>"; };
+		ABF8FEFD17DA7711004D6AA8 /* SecondClockViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondClockViewController.h; sourceTree = "<group>"; };
+		ABF8FEFE17DA7711004D6AA8 /* SecondClockViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondClockViewController.m; sourceTree = "<group>"; };
+		ABF8FF0017DA7711004D6AA8 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		ABF8FF0617DA7711004D6AA8 /* SecondClockTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SecondClockTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABF8FF0717DA7711004D6AA8 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		ABF8FF0F17DA7711004D6AA8 /* SecondClockTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SecondClockTests-Info.plist"; sourceTree = "<group>"; };
+		ABF8FF1117DA7711004D6AA8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		ABF8FF1317DA7711004D6AA8 /* SecondClockTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondClockTests.m; sourceTree = "<group>"; };
+		ABF8FF1F17DA78E8004D6AA8 /* libClockLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libClockLibrary.a; path = "../ClockLibrary/build/Debug-iphoneos/libClockLibrary.a"; sourceTree = "<group>"; };
+		ABF8FFED17DA83AB004D6AA8 /* ClockLibrary.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = ClockLibrary.xcconfig; path = ../ClockLibrary.xcconfig; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABE9920517DB26F200252A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE9923F17DB37DD00252A36 /* QuartzCore.framework in Frameworks */,
+				ABE9923D17DB302800252A36 /* libClockLibrary.a in Frameworks */,
+				ABE9920A17DB26F200252A36 /* CoreGraphics.framework in Frameworks */,
+				ABE9920B17DB26F200252A36 /* UIKit.framework in Frameworks */,
+				ABE9920917DB26F200252A36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE9922117DB26F200252A36 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE9922517DB26F200252A36 /* XCTest.framework in Frameworks */,
+				ABE9922717DB26F200252A36 /* UIKit.framework in Frameworks */,
+				ABE9922617DB26F200252A36 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF8FEE217DA7711004D6AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF8FF2017DA78E8004D6AA8 /* libClockLibrary.a in Frameworks */,
+				ABF8FEEB17DA7711004D6AA8 /* CoreGraphics.framework in Frameworks */,
+				ABF8FEED17DA7711004D6AA8 /* UIKit.framework in Frameworks */,
+				ABF8FEE917DA7711004D6AA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF8FF0317DA7711004D6AA8 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF8FF0817DA7711004D6AA8 /* XCTest.framework in Frameworks */,
+				ABF8FF0A17DA7711004D6AA8 /* UIKit.framework in Frameworks */,
+				ABF8FF0917DA7711004D6AA8 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABE9920C17DB26F200252A36 /* OrangeClock */ = {
+			isa = PBXGroup;
+			children = (
+				ABE9924717DB84D300252A36 /* Main.storyboard */,
+				ABE9921E17DB26F200252A36 /* Images.xcassets */,
+				ABE9920D17DB26F200252A36 /* Supporting Files */,
+			);
+			path = OrangeClock;
+			sourceTree = "<group>";
+		};
+		ABE9920D17DB26F200252A36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABE9920E17DB26F200252A36 /* OrangeClock-Info.plist */,
+				ABE9920F17DB26F200252A36 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABE9922A17DB26F200252A36 /* OrangeClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABE9923017DB26F200252A36 /* OrangeClockTests.m */,
+				ABE9922B17DB26F200252A36 /* Supporting Files */,
+			);
+			path = OrangeClockTests;
+			sourceTree = "<group>";
+		};
+		ABE9922B17DB26F200252A36 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABE9922C17DB26F200252A36 /* OrangeClockTests-Info.plist */,
+				ABE9922D17DB26F200252A36 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABF8FEDC17DA7711004D6AA8 = {
+			isa = PBXGroup;
+			children = (
+				ABF8FFED17DA83AB004D6AA8 /* ClockLibrary.xcconfig */,
+				ABF8FEEE17DA7711004D6AA8 /* SecondClock */,
+				ABF8FF0D17DA7711004D6AA8 /* SecondClockTests */,
+				ABE9920C17DB26F200252A36 /* OrangeClock */,
+				ABE9922A17DB26F200252A36 /* OrangeClockTests */,
+				ABF8FEE717DA7711004D6AA8 /* Frameworks */,
+				ABF8FEE617DA7711004D6AA8 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABF8FEE617DA7711004D6AA8 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABF8FEE517DA7711004D6AA8 /* SecondClock.app */,
+				ABF8FF0617DA7711004D6AA8 /* SecondClockTests.xctest */,
+				ABE9920817DB26F200252A36 /* .app */,
+				ABE9922417DB26F200252A36 /* OrangeClockTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABF8FEE717DA7711004D6AA8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABE9923E17DB37DD00252A36 /* QuartzCore.framework */,
+				ABE9923C17DB302800252A36 /* libClockLibrary.a */,
+				ABF8FF1F17DA78E8004D6AA8 /* libClockLibrary.a */,
+				ABF8FEE817DA7711004D6AA8 /* Foundation.framework */,
+				ABF8FEEA17DA7711004D6AA8 /* CoreGraphics.framework */,
+				ABF8FEEC17DA7711004D6AA8 /* UIKit.framework */,
+				ABF8FF0717DA7711004D6AA8 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABF8FEEE17DA7711004D6AA8 /* SecondClock */ = {
+			isa = PBXGroup;
+			children = (
+				ABE9924417DB844600252A36 /* Main.storyboard */,
+				ABF8FEF717DA7711004D6AA8 /* SecondClockAppDelegate.h */,
+				ABF8FEF817DA7711004D6AA8 /* SecondClockAppDelegate.m */,
+				ABF8FEFD17DA7711004D6AA8 /* SecondClockViewController.h */,
+				ABF8FEFE17DA7711004D6AA8 /* SecondClockViewController.m */,
+				ABF8FF0017DA7711004D6AA8 /* Images.xcassets */,
+				ABF8FEEF17DA7711004D6AA8 /* Supporting Files */,
+			);
+			path = SecondClock;
+			sourceTree = "<group>";
+		};
+		ABF8FEEF17DA7711004D6AA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABF8FEF017DA7711004D6AA8 /* SecondClock-Info.plist */,
+				ABF8FEF117DA7711004D6AA8 /* InfoPlist.strings */,
+				ABF8FEF417DA7711004D6AA8 /* main.m */,
+				ABF8FEF617DA7711004D6AA8 /* SecondClock-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABF8FF0D17DA7711004D6AA8 /* SecondClockTests */ = {
+			isa = PBXGroup;
+			children = (
+				ABF8FF1317DA7711004D6AA8 /* SecondClockTests.m */,
+				ABF8FF0E17DA7711004D6AA8 /* Supporting Files */,
+			);
+			path = SecondClockTests;
+			sourceTree = "<group>";
+		};
+		ABF8FF0E17DA7711004D6AA8 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABF8FF0F17DA7711004D6AA8 /* SecondClockTests-Info.plist */,
+				ABF8FF1017DA7711004D6AA8 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		ABE9920717DB26F200252A36 /* OrangeClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE9923217DB26F300252A36 /* Build configuration list for PBXNativeTarget "OrangeClock" */;
+			buildPhases = (
+				ABE9920417DB26F200252A36 /* Sources */,
+				ABE9920517DB26F200252A36 /* Frameworks */,
+				ABE9920617DB26F200252A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OrangeClock;
+			productName = OrangeClock;
+			productReference = ABE9920817DB26F200252A36 /* .app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABE9922317DB26F200252A36 /* OrangeClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABE9923517DB26F300252A36 /* Build configuration list for PBXNativeTarget "OrangeClockTests" */;
+			buildPhases = (
+				ABE9922017DB26F200252A36 /* Sources */,
+				ABE9922117DB26F200252A36 /* Frameworks */,
+				ABE9922217DB26F200252A36 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABE9922917DB26F200252A36 /* PBXTargetDependency */,
+			);
+			name = OrangeClockTests;
+			productName = OrangeClockTests;
+			productReference = ABE9922417DB26F200252A36 /* OrangeClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		ABF8FEE417DA7711004D6AA8 /* SecondClock */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF8FF1717DA7711004D6AA8 /* Build configuration list for PBXNativeTarget "SecondClock" */;
+			buildPhases = (
+				ABF8FEE117DA7711004D6AA8 /* Sources */,
+				ABF8FEE217DA7711004D6AA8 /* Frameworks */,
+				ABF8FEE317DA7711004D6AA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SecondClock;
+			productName = SecondClock;
+			productReference = ABF8FEE517DA7711004D6AA8 /* SecondClock.app */;
+			productType = "com.apple.product-type.application";
+		};
+		ABF8FF0517DA7711004D6AA8 /* SecondClockTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABF8FF1A17DA7711004D6AA8 /* Build configuration list for PBXNativeTarget "SecondClockTests" */;
+			buildPhases = (
+				ABF8FF0217DA7711004D6AA8 /* Sources */,
+				ABF8FF0317DA7711004D6AA8 /* Frameworks */,
+				ABF8FF0417DA7711004D6AA8 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ABF8FF0C17DA7711004D6AA8 /* PBXTargetDependency */,
+			);
+			name = SecondClockTests;
+			productName = SecondClockTests;
+			productReference = ABF8FF0617DA7711004D6AA8 /* SecondClockTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABF8FEDD17DA7711004D6AA8 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SecondClock;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Cocoaneheads;
+				TargetAttributes = {
+					ABE9922317DB26F200252A36 = {
+						TestTargetID = ABF8FEE417DA7711004D6AA8;
+					};
+					ABF8FF0517DA7711004D6AA8 = {
+						TestTargetID = ABF8FEE417DA7711004D6AA8;
+					};
+				};
+			};
+			buildConfigurationList = ABF8FEE017DA7711004D6AA8 /* Build configuration list for PBXProject "SecondClock" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = ABF8FEDC17DA7711004D6AA8;
+			productRefGroup = ABF8FEE617DA7711004D6AA8 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABF8FEE417DA7711004D6AA8 /* SecondClock */,
+				ABF8FF0517DA7711004D6AA8 /* SecondClockTests */,
+				ABE9920717DB26F200252A36 /* OrangeClock */,
+				ABE9922317DB26F200252A36 /* OrangeClockTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		ABE9920617DB26F200252A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE9921F17DB26F200252A36 /* Images.xcassets in Resources */,
+				ABE9921117DB26F200252A36 /* InfoPlist.strings in Resources */,
+				ABE9924917DB84D300252A36 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE9922217DB26F200252A36 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE9922F17DB26F200252A36 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF8FEE317DA7711004D6AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE9924617DB844600252A36 /* Main.storyboard in Resources */,
+				ABF8FF0117DA7711004D6AA8 /* Images.xcassets in Resources */,
+				ABF8FEF317DA7711004D6AA8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF8FF0417DA7711004D6AA8 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF8FF1217DA7711004D6AA8 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABE9920417DB26F200252A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE9923817DB2A0300252A36 /* SecondClockAppDelegate.m in Sources */,
+				ABE9923A17DB2A0300252A36 /* main.m in Sources */,
+				ABE9923917DB2A0300252A36 /* SecondClockViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABE9922017DB26F200252A36 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABE9923117DB26F200252A36 /* OrangeClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF8FEE117DA7711004D6AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF8FEF517DA7711004D6AA8 /* main.m in Sources */,
+				ABF8FEFF17DA7711004D6AA8 /* SecondClockViewController.m in Sources */,
+				ABF8FEF917DA7711004D6AA8 /* SecondClockAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ABF8FF0217DA7711004D6AA8 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABF8FF1417DA7711004D6AA8 /* SecondClockTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		ABE9922917DB26F200252A36 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABE9920717DB26F200252A36 /* OrangeClock */;
+			targetProxy = ABE9922817DB26F200252A36 /* PBXContainerItemProxy */;
+		};
+		ABF8FF0C17DA7711004D6AA8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ABF8FEE417DA7711004D6AA8 /* SecondClock */;
+			targetProxy = ABF8FF0B17DA7711004D6AA8 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		ABE9920F17DB26F200252A36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE9921017DB26F200252A36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABE9922D17DB26F200252A36 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE9922E17DB26F200252A36 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABE9924417DB844600252A36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE9924517DB844600252A36 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABE9924717DB84D300252A36 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABE9924817DB84D300252A36 /* en */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		ABF8FEF117DA7711004D6AA8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABF8FEF217DA7711004D6AA8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		ABF8FF1017DA7711004D6AA8 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				ABF8FF1117DA7711004D6AA8 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		ABE9923317DB26F300252A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecondClock/SecondClock-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ORANGE_CLOCK=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OrangeClock/OrangeClock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ABE9923417DB26F300252A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecondClock/SecondClock-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"ORANGE_CLOCK=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OrangeClock/OrangeClock-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ABE9923617DB26F300252A36 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecondClock.app/SecondClock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrangeClock/OrangeClock-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "OrangeClockTests/OrangeClockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ABE9923717DB26F300252A36 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecondClock.app/SecondClock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "OrangeClock/OrangeClock-Prefix.pch";
+				INFOPLIST_FILE = "OrangeClockTests/OrangeClockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+		ABF8FF1517DA7711004D6AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF8FFED17DA83AB004D6AA8 /* ClockLibrary.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		ABF8FF1617DA7711004D6AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = ABF8FFED17DA83AB004D6AA8 /* ClockLibrary.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		ABF8FF1817DA7711004D6AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecondClock/SecondClock-Prefix.pch";
+				INFOPLIST_FILE = "SecondClock/SecondClock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		ABF8FF1917DA7711004D6AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecondClock/SecondClock-Prefix.pch";
+				INFOPLIST_FILE = "SecondClock/SecondClock-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		ABF8FF1B17DA7711004D6AA8 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecondClock.app/SecondClock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecondClock/SecondClock-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SecondClockTests/SecondClockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		ABF8FF1C17DA7711004D6AA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SecondClock.app/SecondClock";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SecondClock/SecondClock-Prefix.pch";
+				INFOPLIST_FILE = "SecondClockTests/SecondClockTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABE9923217DB26F300252A36 /* Build configuration list for PBXNativeTarget "OrangeClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE9923317DB26F300252A36 /* Debug */,
+				ABE9923417DB26F300252A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABE9923517DB26F300252A36 /* Build configuration list for PBXNativeTarget "OrangeClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABE9923617DB26F300252A36 /* Debug */,
+				ABE9923717DB26F300252A36 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF8FEE017DA7711004D6AA8 /* Build configuration list for PBXProject "SecondClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF8FF1517DA7711004D6AA8 /* Debug */,
+				ABF8FF1617DA7711004D6AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF8FF1717DA7711004D6AA8 /* Build configuration list for PBXNativeTarget "SecondClock" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF8FF1817DA7711004D6AA8 /* Debug */,
+				ABF8FF1917DA7711004D6AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABF8FF1A17DA7711004D6AA8 /* Build configuration list for PBXNativeTarget "SecondClockTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABF8FF1B17DA7711004D6AA8 /* Debug */,
+				ABF8FF1C17DA7711004D6AA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABF8FEDD17DA7711004D6AA8 /* Project object */;
+}

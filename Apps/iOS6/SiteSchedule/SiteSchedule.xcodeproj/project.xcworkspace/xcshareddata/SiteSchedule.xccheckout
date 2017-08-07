@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>672C51BC-FB06-4586-8825-1D6CBA7C9EC1</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SiteSchedule</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0464C04E2B441B96B0AD1E4EEC6322ACA104A0A5</key>
+		<string>github.com:Cocoaneheads/iPhone.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Apps/iOS6/SiteSchedule/SiteSchedule.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0464C04E2B441B96B0AD1E4EEC6322ACA104A0A5</key>
+		<string>../../../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>github.com:Cocoaneheads/iPhone.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0464C04E2B441B96B0AD1E4EEC6322ACA104A0A5</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0464C04E2B441B96B0AD1E4EEC6322ACA104A0A5</string>
+			<key>IDESourceControlWCCName</key>
+			<string>iPhone</string>
+		</dict>
+	</array>
+</dict>
+</plist>

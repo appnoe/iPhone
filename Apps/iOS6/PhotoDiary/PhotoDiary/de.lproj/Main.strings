@@ -1,0 +1,15 @@
+
+/* Class = "IBUILabel"; text = "Title"; ObjectID = "2pz-XF-uhl"; */
+"2pz-XF-uhl.text" = "Title";
+
+/* Class = "IBUIViewController"; title = "detail"; ObjectID = "Ah7-4n-0Wa"; */
+"Ah7-4n-0Wa.title" = "detail";
+
+/* Class = "IBUINavigationItem"; title = "Diary Entry"; ObjectID = "cra-N8-TIN"; */
+"cra-N8-TIN.title" = "Tagebucheintrag";
+
+/* Class = "IBUITableViewController"; title = "master"; ObjectID = "pGg-6v-bdr"; */
+"pGg-6v-bdr.title" = "master";
+
+/* Class = "IBUINavigationItem"; title = "Photo Diary"; ObjectID = "tQt-TN-PWz"; */
+"tQt-TN-PWz.title" = "Fototagebuch";
